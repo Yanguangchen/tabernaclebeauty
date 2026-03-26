@@ -1,0 +1,32 @@
+{
+  "name": "Tabernacle Beauty",
+  "short_name": "Tabernacle",
+  "description": "Tabernacle Beauty Singapore — brows, lashes, facials, creambath hair, threading, embroidery, henna, hair colour, and body waxing.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F9F5F6",
+  "theme_color": "#D99BB3",
+  "lang": "en-SG",
+  "icons": [
+    {
+      "src": "Assets/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "Assets/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "Assets/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

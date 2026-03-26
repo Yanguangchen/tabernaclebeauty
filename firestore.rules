@@ -1,0 +1,23 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isBlogEditor() {
+      return request.auth != null
+        && request.auth.uid == "zA0E4O6xwpRXuCIaDQY4yt3k9wq1";
+    }
+
+    // Blog posts: anyone can read; only the designated editor UID may write.
+    // Create/update/delete still require authorUid to match the signed-in user (your account).
+    match /posts/{postId} {
+      allow read: if true;
+      allow create: if isBlogEditor()
+        && request.resource.data.authorUid == request.auth.uid
+        && request.resource.data.title is string
+        && request.resource.data.content is string
+        && request.resource.data.authorUid is string
+        && request.resource.data.authorName is string;
+      allow update, delete: if isBlogEditor()
+        && resource.data.authorUid == request.auth.uid;
+    }
+  }
+}
