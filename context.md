@@ -2,25 +2,28 @@
 
 ## What this is
 
-Marketing site for **Tabernacle Beauty**: glass / neumorphic styling, hero with **five** auto-rotating service pills (brows, facials, waxing, hair coloring, lashes) tied to **`Assets/hero/*.mp4`**, a **nine-card** core services grid (creambath, threading, embroidery, henna, etc.), a **static Google reviews** strip as a **horizontal scroll carousel**, **Elfsight Facebook** embed and **Google Maps** under **Visit**, plus **contact** and a **Firestore blog**: public listing on **`blog.html`** (`js/blog-read.js`), editor sign-in and publishing on **`signin.html`** (`js/blog-admin.js`). Static HTML/CSS/JS; **Firebase** (Auth + Firestore + optional Analytics) for the blog modules.
+Marketing site for **Tabernacle Beauty**: glass / neumorphic styling, hero with **five** auto-rotating service pills (brows, facials, waxing, hair coloring, lashes) tied to **`Assets/hero/*.mp4`**, an expanded **core services** grid (incl. makeup, creambath, threading, embroidery, henna brows, lashes, etc.) plus a separate **Other services** section (ear candling, pedicure, manicure, henna art). Each service card links to **`pricing.html`** (section anchor where relevant) via a pill **View pricing** and to **WhatsApp** for booking. **`pricing.html`** holds the full static price list (waxing, hair, facials, makeup, threading, beauty course, other treatments, packages). **Google reviews** carousel, **Elfsight Facebook** + **Maps** under **Visit**, **contact**, and a **Firestore blog** on **`blog.html`** / editor **`signin.html`**. Static HTML/CSS/JS; **Firebase** for the blog modules only.
 
 ## Stack
 
-- **HTML5** — `index.html` (home), `contact.html` (contact + map), `blog.html` (read-only blog), `signin.html` (blog editor + Firebase admin module)
+- **HTML5** — `index.html` (home), `pricing.html` (price list + inline drawer JS), `contact.html` (contact + map), `blog.html` (read-only blog), `signin.html` (blog editor + Firebase admin module)
 - **CSS** — `styles.css` (`:root` design tokens, components, `@keyframes`, **`prefers-reduced-motion`** overrides, breakpoints **980px** and **640px**)
-- **JavaScript** — **`index.html`**: hero pills + parallax (inline). **`contact.html`**: drawer only (inline). **`blog.html`**: drawer (inline) + **`js/blog-read.js`**. **`signin.html`**: drawer (inline) + **`js/blog-admin.js`** (Google sign-in, publish/delete, real-time list).
+- **JavaScript** — **`index.html`**: hero pills + parallax (inline). **`pricing.html`** / **`contact.html`**: mobile drawer only (inline). **`blog.html`**: drawer (inline) + **`js/blog-read.js`**. **`signin.html`**: drawer (inline) + **`js/blog-admin.js`** (Google sign-in, publish/delete, real-time list).
 - **Fonts** — Google Fonts: Playfair Display (headings), Inter (body)
 
 ## Pages & anchors
 
 | Page | Role |
 |------|------|
-| `index.html` | `#home` hero, `#services` grid, `#reviews` (carousel + cards), `#visit` (Elfsight + map heading + iframe) |
-| `contact.html` | Contact copy, panels, map; nav links to `index.html#…` and `blog.html` (desktop nav has no **Reviews** link; drawer matches contact’s shorter treatment list) |
+| `index.html` | `#home` hero, `#services` (core cards), `#other-services`, `#reviews`, `#visit` (Elfsight + map). Nav includes **Pricing** → `pricing.html`. |
+| `pricing.html` | Full price list; in-page TOC; section IDs: `#waxing`, `#hair`, `#facials`, `#makeup`, `#threading`, `#beauty-course`, `#other-treatments`, `#packages`; main wrapper `#pricing`. |
+| `contact.html` | Contact copy, panels, map; nav links to `index.html#…`, `blog.html`, etc. (desktop nav has no **Reviews** link; drawer matches contact’s shorter treatment list). |
 | `blog.html` | Firestore blog: **read-only** listing (`js/blog-read.js`). |
 | `signin.html` | Blog editor: **Google Sign-In**, composer, delete own posts (`js/blog-admin.js`). Only the allowlisted editor UID in **`firestore.rules`** (`isBlogEditor()`) can write. |
 
-**Section anchors (home):** `#home`, `#services`, `#reviews`, `#visit`, plus per-card IDs `#service-brows`, `#service-facials`, … `#service-lashes`.
+**Section anchors (home):** `#home`, `#services`, `#other-services`, `#reviews`, `#visit`, plus per-card IDs `#service-brows`, … `#service-makeup`, and other-section cards (`#service-ear-candling`, …).
+
+**Sitemap / crawl:** [`sitemap.xml`](sitemap.xml) — `/`, `pricing.html`, `contact.html`, `blog.html`. [`robots.txt`](robots.txt) — `Sitemap: https://www.tabernaclebeauty.com/sitemap.xml`. **`signin.html`** is not listed (editor UI, `noindex`).
 
 ## Third-party embeds
 
@@ -38,7 +41,7 @@ Marketing site for **Tabernacle Beauty**: glass / neumorphic styling, hero with 
 ## File roles
 
 - **`index.html`** — All home content; hero **`#heroVideo`** in **`#heroMedia`**; WhatsApp links; reviews markup inside **`.reviews-carousel`** (viewport + track).
-- **`styles.css`** — Single stylesheet for all pages (including `.page-contact`, `.page-blog`, `.reviews-carousel`, `.footer__*`, motion tokens `--motion-*`).
+- **`styles.css`** — Single stylesheet for all pages (including `.page-contact`, `.page-pricing`, `.page-blog`, `.reviews-carousel`, `.service-card__actions` / `.service-card__pricing-pill` / `.service-card__book`, `.pricing-*`, `.footer__*`, motion tokens `--motion-*`).
 - **`manifest.json`** — PWA manifest (`standalone`, icons, theme).
 - **`js/firebase-shared.js`** — `initializeApp`, `getAuth`, `getFirestore`, `posts` collection + `orderBy("createdAt","desc")` query.
 - **`js/blog-read.js`** — `onSnapshot` + render posts (no delete).
@@ -52,7 +55,7 @@ Marketing site for **Tabernacle Beauty**: glass / neumorphic styling, hero with 
 - **WhatsApp:** `https://wa.me/6584574640` (+65 8457 4640).
 - **Navbar:** `.nav-cta` “Book your visit” → `wa.me` (new tab).
 - **Floating:** `.whatsapp-float` — same URL, fixed bottom-right. **Blog editor:** `.footer__signin` in the footer **Explore** column on `index`, `contact`, and `blog` → `signin.html`.
-- **Hero:** Primary in-hero CTA is **Explore All Treatments** → `#services`; booking via nav, float, and service-card WhatsApp links.
+- **Hero:** Primary in-hero CTA is **Explore All Treatments** → `#services`; booking via nav, float, and service-card **Book on WhatsApp** links. **View pricing** pills on each card → `pricing.html` (with hash to the relevant section when applicable).
 
 ## Conventions
 
@@ -75,6 +78,7 @@ Luxury-adjacent, calm, beauty-specific: refined, radiant, polished, expert, pers
 - **`manifest.json`** — PWA-style manifest; icons from `Assets/favicon.png`.
 - **Favicon** — `Assets/favicon.png` (also `apple-touch-icon`, OG/Twitter image in meta).
 - **Open Graph / Twitter** — Placeholder absolute URLs under **`https://www.tabernaclebeauty.com/`**; update when the live domain is final. Prefer a 1200×630 `og:image` for sharing.
+- **Sitemap** — Keep [`sitemap.xml`](sitemap.xml) in sync with new public HTML routes; bump `<lastmod>` when a page changes materially. Do not add `signin.html` unless you remove `noindex` and intend it to rank.
 
 ## Running locally
 

@@ -1544,10 +1544,22 @@ body.nav-drawer-open {
   font-size: 0.88rem;
 }
 
+/* Elfsight AI chat launcher is bottom-right; wrapper avoids blocking page clicks */
+.elfsight-ai-chat {
+  position: fixed;
+  inset: 0;
+  z-index: 48;
+  pointer-events: none;
+}
+
+.elfsight-ai-chat > * {
+  pointer-events: auto;
+}
+
 .whatsapp-float {
   position: fixed;
   right: max(20px, env(safe-area-inset-right, 0px));
-  bottom: max(22px, env(safe-area-inset-bottom, 0px));
+  bottom: calc(max(22px, env(safe-area-inset-bottom, 0px)) + 72px);
   z-index: 50;
   display: grid;
   place-items: center;

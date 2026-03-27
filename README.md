@@ -1,6 +1,6 @@
 # Tabernacle Beauty — marketing site
 
-Static marketing site for **Tabernacle Beauty** (Singapore): hero with rotating service videos, services grid, Google reviews carousel, Facebook feed + map, contact page, and a **Firestore-backed blog** (public read on `blog.html`, Google Sign-In editor on `signin.html`).
+Static marketing site for **Tabernacle Beauty** (Singapore): hero with rotating service videos, services grid (core + other treatments), **full price list** on `pricing.html`, Google reviews carousel, Facebook feed + map, contact page, and a **Firestore-backed blog** (public read on `blog.html`, Google Sign-In editor on `signin.html`).
 
 ## Tech stack
 
@@ -12,7 +12,8 @@ Static marketing site for **Tabernacle Beauty** (Singapore): hero with rotating 
 
 | Path | Purpose |
 |------|---------|
-| [`index.html`](index.html) | Home: hero, services, reviews, visit (Elfsight + Maps), footer |
+| [`index.html`](index.html) | Home: hero, services (core + other), per-card **View pricing** + WhatsApp, reviews, visit (Elfsight + Maps), footer |
+| [`pricing.html`](pricing.html) | Full treatment price list (waxing, hair, facials, makeup, threading, courses, packages); nav + TOC anchors `#waxing`, `#hair`, … |
 | [`contact.html`](contact.html) | Contact details and map |
 | [`blog.html`](blog.html) | Public blog listing (read-only; loads [`js/blog-read.js`](js/blog-read.js)) |
 | [`signin.html`](signin.html) | Blog editor: Google sign-in, publish/delete (loads [`js/blog-admin.js`](js/blog-admin.js)); `noindex` |
@@ -64,7 +65,9 @@ The web API key in `js/firebase-shared.js` is normal for Firebase web apps; **ac
 
 ## Deploying the static site
 
-Host `index.html`, `contact.html`, `blog.html`, `signin.html`, `styles.css`, `js/`, `Assets/`, and `manifest.json` on any static host (Netlify, Vercel, GitHub Pages, S3, etc.). Ensure **Firebase authorized domains** include your production hostname.
+Host `index.html`, `pricing.html`, `contact.html`, `blog.html`, `signin.html`, `styles.css`, `js/`, `Assets/`, `sitemap.xml`, `robots.txt`, and `manifest.json` on any static host (Netlify, Vercel, GitHub Pages, S3, etc.). Ensure **Firebase authorized domains** include your production hostname.
+
+**SEO:** [`sitemap.xml`](sitemap.xml) lists the public indexable URLs (home, pricing, contact, blog). [`robots.txt`](robots.txt) points crawlers to the sitemap. `signin.html` is `noindex` and is not listed in the sitemap.
 
 ---
 
