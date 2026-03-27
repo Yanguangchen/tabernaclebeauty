@@ -136,6 +136,26 @@
           {
             "@type": "Offer",
             "itemOffered": { "@type": "Service", "name": "Hair coloring" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Makeup" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Ear candling" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Classic pedicure" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Basic manicure" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Henna art work" }
           }
         ]
       }
@@ -151,6 +171,7 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -202,6 +223,7 @@
         <nav class="nav-mobile-drawer__links" aria-label="Primary">
           <a href="#home" class="nav-mobile-drawer__link">Home</a>
           <a href="#services" class="nav-mobile-drawer__link">Services</a>
+          <a href="pricing.html" class="nav-mobile-drawer__link">Pricing</a>
           <a href="#reviews" class="nav-mobile-drawer__link">Reviews</a>
           <a href="blog.html" class="nav-mobile-drawer__link">Blog</a>
           <a href="contact.html" class="nav-mobile-drawer__link">Contact</a>
@@ -218,6 +240,15 @@
           <a href="#service-hair-color" class="nav-mobile-drawer__link nav-mobile-drawer__link--accent">Hair coloring</a>
           <a href="#service-henna" class="nav-mobile-drawer__link nav-mobile-drawer__link--accent">Henna eyebrow</a>
           <a href="#service-lashes" class="nav-mobile-drawer__link nav-mobile-drawer__link--accent">Eyelash extensions</a>
+          <a href="#service-makeup" class="nav-mobile-drawer__link nav-mobile-drawer__link--accent">Makeup</a>
+        </nav>
+
+        <p class="nav-mobile-drawer__label">Other services</p>
+        <nav class="nav-mobile-drawer__links nav-mobile-drawer__links--services" aria-label="Additional treatments">
+          <a href="#service-ear-candling" class="nav-mobile-drawer__link nav-mobile-drawer__link--accent">Ear candling</a>
+          <a href="#service-classic-pedicure" class="nav-mobile-drawer__link nav-mobile-drawer__link--accent">Classic pedicure</a>
+          <a href="#service-basic-manicure" class="nav-mobile-drawer__link nav-mobile-drawer__link--accent">Basic manicure</a>
+          <a href="#service-henna-art" class="nav-mobile-drawer__link nav-mobile-drawer__link--accent">Henna art work</a>
         </nav>
 
         <a
@@ -243,13 +274,13 @@
         <h1>Refined beauty, softly perfected</h1>
 
         <p id="heroText">
-          Expert brow styling, facials, body waxing, hair colouring, and lash extensions—personalised care in a calm, elegant Singapore studio. Explore our full menu below for creambath, threading, embroidery, henna brows, and more.
+          Expert brow styling, facials, body waxing, hair colouring, and lash extensions—personalised care in a calm, elegant Singapore studio. Explore our full menu below for creambath, threading, embroidery, henna brows, makeup, and more.
         </p>
 
         <div class="service-switcher">
           <button class="service-pill active"
             data-title="Glow with confidence"
-            data-hero-text="Expert brow styling, facials, body waxing, hair colouring, and lash extensions—personalised care in a calm, elegant Singapore studio. Explore our full menu below for creambath, threading, embroidery, henna brows, and more."
+            data-hero-text="Expert brow styling, facials, body waxing, hair colouring, and lash extensions—personalised care in a calm, elegant Singapore studio. Explore our full menu below for creambath, threading, embroidery, henna brows, makeup, and more."
             data-card-text="Every treatment is delivered with meticulous technique and a soft, luxurious touch—from brows and lashes to colour and waxing—so you leave refreshed, confident, and effortlessly polished."
             data-video="Assets/hero/brows.mp4">
             Brow styling
@@ -347,7 +378,7 @@
       <div class="section-header">
         <h2>Core services</h2>
         <p>
-          Brows, lashes, skin, hair, and smooth-silhouette care—each treatment personalised for calm, confidence, and luxuriously polished results.
+          Brows, lashes, skin, hair, makeup, and smooth-silhouette care—each treatment personalised for calm, confidence, and luxuriously polished results.
         </p>
       </div>
 
@@ -358,7 +389,10 @@
           <p>
             Refined shaping and expert definition that frames your features with effortless polish and natural confidence.
           </p>
-          <a href="https://wa.me/6584574640" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          <div class="service-card__actions">
+            <a href="pricing.html#threading" class="service-card__pricing-pill">View pricing</a>
+            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          </div>
         </article>
 
         <article class="service-card" id="service-facials">
@@ -367,7 +401,10 @@
           <p>
             Luxurious, skin-loving facials that restore radiance, soften stress, and leave your complexion refreshed and luminous.
           </p>
-          <a href="https://wa.me/6584574640" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          <div class="service-card__actions">
+            <a href="pricing.html#facials" class="service-card__pricing-pill">View pricing</a>
+            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          </div>
         </article>
 
         <article class="service-card" id="service-waxing">
@@ -376,7 +413,10 @@
           <p>
             Professional body waxing and hair removal with expert technique, hygienic standards, and a refined, comfortable experience for lasting smoothness.
           </p>
-          <a href="https://wa.me/6584574640" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          <div class="service-card__actions">
+            <a href="pricing.html#waxing" class="service-card__pricing-pill">View pricing</a>
+            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          </div>
         </article>
 
         <article class="service-card" id="service-creambath">
@@ -385,7 +425,10 @@
           <p>
             Deep-conditioning creambath care with scalp massage—restores shine, softness, and healthy movement for hair that feels salon-fresh.
           </p>
-          <a href="https://wa.me/6584574640" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          <div class="service-card__actions">
+            <a href="pricing.html#hair" class="service-card__pricing-pill">View pricing</a>
+            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          </div>
         </article>
 
         <article class="service-card" id="service-threading">
@@ -394,7 +437,10 @@
           <p>
             Precise threading for smooth, even skin—ideal for brows, lip, and full-face refinement with clean lines and minimal irritation.
           </p>
-          <a href="https://wa.me/6584574640" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          <div class="service-card__actions">
+            <a href="pricing.html#threading" class="service-card__pricing-pill">View pricing</a>
+            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          </div>
         </article>
 
         <article class="service-card" id="service-embroidery">
@@ -403,7 +449,10 @@
           <p>
             Semi-permanent brow embroidery mapped to your features—natural-looking fullness and symmetry that simplifies your daily routine.
           </p>
-          <a href="https://wa.me/6584574640" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          <div class="service-card__actions">
+            <a href="pricing.html" class="service-card__pricing-pill">View pricing</a>
+            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          </div>
         </article>
 
         <article class="service-card" id="service-hair-color">
@@ -412,7 +461,10 @@
           <p>
             Professional colour services from subtle gloss to full transformation—consultation-led tones that complement your skin and style.
           </p>
-          <a href="https://wa.me/6584574640" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          <div class="service-card__actions">
+            <a href="pricing.html#hair" class="service-card__pricing-pill">View pricing</a>
+            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          </div>
         </article>
 
         <article class="service-card" id="service-henna">
@@ -421,7 +473,10 @@
           <p>
             Rich henna tint for brows—adds depth, shape, and a soft stain that keeps arches looking full and polished.
           </p>
-          <a href="https://wa.me/6584574640" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          <div class="service-card__actions">
+            <a href="pricing.html#hair" class="service-card__pricing-pill">View pricing</a>
+            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          </div>
         </article>
 
         <article class="service-card" id="service-lashes">
@@ -430,7 +485,83 @@
           <p>
             Custom lash sets for length, curl, and volume—lightweight application and aftercare guidance for eyes that look effortlessly awake.
           </p>
-          <a href="https://wa.me/6584574640" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          <div class="service-card__actions">
+            <a href="pricing.html" class="service-card__pricing-pill">View pricing</a>
+            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="service-card" id="service-makeup">
+          <div class="service-icon">💄</div>
+          <h3>Makeup</h3>
+          <p>
+            Polished looks for everyday wear or special occasions—thoughtful colour, soft blending, and a finish that feels like you, elevated.
+          </p>
+          <div class="service-card__actions">
+            <a href="pricing.html#makeup" class="service-card__pricing-pill">View pricing</a>
+            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="services services--other" id="other-services" aria-labelledby="other-services-heading">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="other-services-heading">Other services</h2>
+        <p>
+          Extra treatments to round out your visit—wellness, nails, and artful detail in the same calm studio.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card" id="service-ear-candling">
+          <div class="service-icon">🕯</div>
+          <h3>Ear candling</h3>
+          <p>
+            A relaxing, traditional ear-candling experience—unwind while we take care of you in a gentle, hygienic setting.
+          </p>
+          <div class="service-card__actions">
+            <a href="pricing.html#other-treatments" class="service-card__pricing-pill">View pricing</a>
+            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="service-card" id="service-classic-pedicure">
+          <div class="service-icon">🧴</div>
+          <h3>Classic pedicure</h3>
+          <p>
+            Neat shaping, cuticle care, and a polished finish—classic pedicure care for feet that look and feel refreshed.
+          </p>
+          <div class="service-card__actions">
+            <a href="pricing.html#other-treatments" class="service-card__pricing-pill">View pricing</a>
+            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="service-card" id="service-basic-manicure">
+          <div class="service-icon">💅</div>
+          <h3>Basic manicure</h3>
+          <p>
+            Essential nail shaping, tidy cuticles, and a clean, refined look—perfect upkeep between fuller nail treatments.
+          </p>
+          <div class="service-card__actions">
+            <a href="pricing.html#other-treatments" class="service-card__pricing-pill">View pricing</a>
+            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="service-card" id="service-henna-art">
+          <div class="service-icon">🎨</div>
+          <h3>Henna art work</h3>
+          <p>
+            Decorative henna designs for hands and more—custom patterns with rich stain and careful, steady application.
+          </p>
+          <div class="service-card__actions">
+            <a href="pricing.html#other-treatments" class="service-card__pricing-pill">View pricing</a>
+            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+          </div>
         </article>
       </div>
     </div>
@@ -814,6 +945,7 @@
           <ul class="footer__links">
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#visit">Visit &amp; map</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -830,6 +962,8 @@
             <li><a href="#service-facials">Facial treatments</a></li>
             <li><a href="#service-waxing">Body waxing</a></li>
             <li><a href="#service-lashes">Eyelash extensions</a></li>
+            <li><a href="#service-makeup">Makeup</a></li>
+            <li><a href="#other-services">Other services</a></li>
             <li><a href="#services">All services</a></li>
           </ul>
         </nav>
