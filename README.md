@@ -1,10 +1,10 @@
 # Tabernacle Beauty — marketing site
 
-Static marketing site for **Tabernacle Beauty** (Singapore): hero with rotating service videos, services grid (core + other treatments), **full price list** on `pricing.html`, Google reviews carousel, Facebook feed + map, contact page, and a **Firestore-backed blog** (public read on `blog.html`, Google Sign-In editor on `signin.html`).
+Static marketing site for **Tabernacle Beauty** (Singapore): hero with rotating service videos, services grid (core + other treatments), **full price list** on `pricing.html`, Google reviews carousel, Facebook feed + map, contact page, and a **Firestore-backed blog** (public read on `blog.html`, Google Sign-In editor on `admin.html`).
 
 ## Tech stack
 
-- **HTML**, **CSS** (`styles.css`), **inline JS** on `index.html` / `contact.html` / `blog.html` / `signin.html`
+- **HTML**, **CSS** (`styles.css`), **inline JS** on `index.html` / `contact.html` / `blog.html` / `admin.html`
 - **Firebase** (blog): Auth (Google), Firestore (`posts`), optional Analytics — see [`js/firebase-shared.js`](js/firebase-shared.js), [`js/blog-read.js`](js/blog-read.js), [`js/blog-admin.js`](js/blog-admin.js)
 - **PWA**: [`manifest.json`](manifest.json)
 
@@ -16,7 +16,7 @@ Static marketing site for **Tabernacle Beauty** (Singapore): hero with rotating 
 | [`pricing.html`](pricing.html) | Full treatment price list (waxing, hair, facials, makeup, threading, courses, packages); nav + TOC anchors `#waxing`, `#hair`, … |
 | [`contact.html`](contact.html) | Contact details and map |
 | [`blog.html`](blog.html) | Public blog listing (read-only; loads [`js/blog-read.js`](js/blog-read.js)) |
-| [`signin.html`](signin.html) | Blog editor: Google sign-in, publish/delete (loads [`js/blog-admin.js`](js/blog-admin.js)); `noindex` |
+| [`admin.html`](admin.html) | Blog editor: Google sign-in, publish/delete (loads [`js/blog-admin.js`](js/blog-admin.js)); `noindex` |
 | [`styles.css`](styles.css) | Global styles and components |
 | [`js/firebase-shared.js`](js/firebase-shared.js) | Shared Firebase app, auth, Firestore, `posts` query |
 | [`js/blog-read.js`](js/blog-read.js) | Firestore `onSnapshot` → render posts (no auth UI) |
@@ -36,7 +36,7 @@ npx serve .
 
 Then open the URL shown (e.g. `http://localhost:3000`). Serving the folder avoids broken relative paths for `styles.css`, `Assets/`, and `manifest.json`.
 
-**Blog / Firebase:** open [`blog.html`](blog.html) or [`signin.html`](signin.html) through that server (**not** `file://`), or the Google sign-in popup and ES modules will not work reliably.
+**Blog / Firebase:** open [`blog.html`](blog.html) or [`admin.html`](admin.html) through that server (**not** `file://`), or the Google sign-in popup and ES modules will not work reliably.
 
 ## Firebase setup (blog)
 
@@ -65,9 +65,9 @@ The web API key in `js/firebase-shared.js` is normal for Firebase web apps; **ac
 
 ## Deploying the static site
 
-Host `index.html`, `pricing.html`, `contact.html`, `blog.html`, `signin.html`, `styles.css`, `js/`, `Assets/`, `sitemap.xml`, `robots.txt`, and `manifest.json` on any static host (Netlify, Vercel, GitHub Pages, S3, etc.). Ensure **Firebase authorized domains** include your production hostname.
+Host `index.html`, `pricing.html`, `contact.html`, `blog.html`, `admin.html`, `styles.css`, `js/`, `Assets/`, `sitemap.xml`, `robots.txt`, and `manifest.json` on any static host (Netlify, Vercel, GitHub Pages, S3, etc.). Ensure **Firebase authorized domains** include your production hostname.
 
-**SEO:** [`sitemap.xml`](sitemap.xml) lists the public indexable URLs (home, pricing, contact, blog). [`robots.txt`](robots.txt) points crawlers to the sitemap. `signin.html` is `noindex` and is not listed in the sitemap.
+**SEO:** [`sitemap.xml`](sitemap.xml) lists the public indexable URLs (home, pricing, contact, blog). [`robots.txt`](robots.txt) points crawlers to the sitemap. `admin.html` is `noindex` and is not listed in the sitemap.
 
 ---
 
