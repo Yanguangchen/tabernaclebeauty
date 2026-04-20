@@ -48,6 +48,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 
+  <!-- Meta Pixel Base Code — replace YOUR_PIXEL_ID with your actual Facebook Pixel ID -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+  /></noscript>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -1032,12 +1049,13 @@
       </ul>
 
       <a
-        href="https://wa.me/6584574640"
+        href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%20saw%20your%20page%20and%20would%20like%20to%20book%20an%20appointment.%20Could%20you%20help%20me%20with%20available%20slots%3F"
         class="nav-cta"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Book your visit on WhatsApp"
-      >Book your visit</a>
+        aria-label="Chat with Jessyca on WhatsApp to book"
+        onclick="trackWhatsAppLead('nav_cta')"
+      >Chat with Jessyca</a>
 
       <button
         type="button"
@@ -1107,11 +1125,12 @@
         </nav>
 
         <a
-          href="https://wa.me/6584574640"
+          href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%20saw%20your%20page%20and%20would%20like%20to%20book%20an%20appointment.%20Could%20you%20help%20me%20with%20available%20slots%3F"
           class="nav-mobile-drawer__cta"
           target="_blank"
           rel="noopener noreferrer"
-        >Book your visit on WhatsApp</a>
+          onclick="trackWhatsAppLead('drawer_cta')"
+        >Chat with Jessyca on WhatsApp</a>
       </div>
     </div>
   </div>
@@ -1126,16 +1145,17 @@
 
     <div class="container hero-grid">
       <div class="hero-copy">
-        <h1>Refined beauty, softly perfected</h1>
+        <h1>Tampines' Trusted Beauty Studio</h1>
+        <p class="hero-sub-headline">Look your best without the guesswork — walk in bare-faced, leave camera-ready.</p>
 
         <p id="heroText">
-          Expert brow styling, facials, body waxing, hair colouring, and lash extensions—personalised care in a calm, elegant Singapore studio. Explore our full menu below for creambath, threading, embroidery, henna brows, makeup, and more.
+          Expert brow styling, facials, body waxing, hair colouring, and lash extensions — personalised care in a calm Tampines studio. Scroll down or chat with Jessyca to book threading, embroidery, henna brows, makeup, and more.
         </p>
 
         <div class="service-switcher">
           <button class="service-pill active"
             data-title="Glow with confidence"
-            data-hero-text="Expert brow styling, facials, body waxing, hair colouring, and lash extensions—personalised care in a calm, elegant Singapore studio. Explore our full menu below for creambath, threading, embroidery, henna brows, makeup, and more."
+            data-hero-text="Expert brow styling, facials, body waxing, hair colouring, and lash extensions — personalised care in a calm Tampines studio. Scroll down or chat with Jessyca to book threading, embroidery, henna brows, makeup, and more."
             data-card-text="Every treatment is delivered with meticulous technique and a soft, luxurious touch—from brows and lashes to colour and waxing—so you leave refreshed, confident, and effortlessly polished."
             data-video="Assets/hero/brows.mp4">
             Brow styling
@@ -1175,6 +1195,13 @@
         </div>
 
         <div class="hero-actions">
+          <a
+            href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%20saw%20your%20page%20and%20would%20like%20to%20book%20an%20appointment.%20Could%20you%20help%20me%20with%20available%20slots%3F"
+            class="btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="trackWhatsAppLead('hero_cta')"
+          >Chat with Jessyca →</a>
           <a href="#services" class="btn-secondary">Explore All Treatments</a>
         </div>
       </div>
@@ -1228,6 +1255,30 @@
     </div>
   </section>
 
+  <section class="tripwire" id="tripwire" aria-labelledby="tripwire-heading">
+    <div class="container">
+      <div class="tripwire__card">
+        <div class="tripwire__badge">Most Popular · From $9</div>
+        <h2 id="tripwire-heading">Painless Eyebrow Threading</h2>
+        <p class="tripwire__body">
+          First-timers love it — clean, precise brows in under 10 minutes with <strong>zero redness</strong>. Rated 4.9/5 on Google by 100+ clients. No wax, no chemicals, just expert hands.
+        </p>
+        <ul class="tripwire__perks">
+          <li>Gentle technique — clients say "barely felt a thing"</li>
+          <li>Walk-ins welcome · no appointment needed</li>
+          <li>Done by Jessyca — 15+ years of threading experience</li>
+        </ul>
+        <a
+          href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20try%20eyebrow%20threading.%20Do%20you%20have%20availability%20today%3F"
+          class="btn-primary tripwire__cta"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="trackWhatsAppLead('tripwire_threading')"
+        >Book Threading with Jessyca — from $9 →</a>
+      </div>
+    </div>
+  </section>
+
   <section class="services" id="services">
     <div class="container">
       <div class="section-header">
@@ -1247,7 +1298,7 @@
           <div class="service-card__actions">
             <a href="pricing.html#threading" class="service-card__pricing-pill">View pricing</a>
             <a href="services-trust.html#trust-brows" class="service-card__trust-pill">Why trust us</a>
-            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+            <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20Could%20you%20let%20me%20know%20the%20available%20slots%3F" class="service-card__book" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('service_card')">Chat with Jessyca</a>
           </div>
         </article>
 
@@ -1260,7 +1311,7 @@
           <div class="service-card__actions">
             <a href="pricing.html#facials" class="service-card__pricing-pill">View pricing</a>
             <a href="services-trust.html#trust-facials" class="service-card__trust-pill">Why trust us</a>
-            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+            <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20Could%20you%20let%20me%20know%20the%20available%20slots%3F" class="service-card__book" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('service_card')">Chat with Jessyca</a>
           </div>
         </article>
 
@@ -1273,7 +1324,7 @@
           <div class="service-card__actions">
             <a href="pricing.html#waxing" class="service-card__pricing-pill">View pricing</a>
             <a href="services-trust.html#trust-waxing" class="service-card__trust-pill">Why trust us</a>
-            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+            <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20Could%20you%20let%20me%20know%20the%20available%20slots%3F" class="service-card__book" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('service_card')">Chat with Jessyca</a>
           </div>
         </article>
 
@@ -1286,7 +1337,7 @@
           <div class="service-card__actions">
             <a href="pricing.html#hair" class="service-card__pricing-pill">View pricing</a>
             <a href="services-trust.html#trust-creambath" class="service-card__trust-pill">Why trust us</a>
-            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+            <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20Could%20you%20let%20me%20know%20the%20available%20slots%3F" class="service-card__book" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('service_card')">Chat with Jessyca</a>
           </div>
         </article>
 
@@ -1299,7 +1350,7 @@
           <div class="service-card__actions">
             <a href="pricing.html#threading" class="service-card__pricing-pill">View pricing</a>
             <a href="services-trust.html#trust-threading" class="service-card__trust-pill">Why trust us</a>
-            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+            <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20Could%20you%20let%20me%20know%20the%20available%20slots%3F" class="service-card__book" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('service_card')">Chat with Jessyca</a>
           </div>
         </article>
 
@@ -1312,7 +1363,7 @@
           <div class="service-card__actions">
             <a href="pricing.html" class="service-card__pricing-pill">View pricing</a>
             <a href="services-trust.html#trust-embroidery" class="service-card__trust-pill">Why trust us</a>
-            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+            <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20Could%20you%20let%20me%20know%20the%20available%20slots%3F" class="service-card__book" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('service_card')">Chat with Jessyca</a>
           </div>
         </article>
 
@@ -1325,7 +1376,7 @@
           <div class="service-card__actions">
             <a href="pricing.html#hair" class="service-card__pricing-pill">View pricing</a>
             <a href="services-trust.html#trust-hair-color" class="service-card__trust-pill">Why trust us</a>
-            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+            <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20Could%20you%20let%20me%20know%20the%20available%20slots%3F" class="service-card__book" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('service_card')">Chat with Jessyca</a>
           </div>
         </article>
 
@@ -1338,7 +1389,7 @@
           <div class="service-card__actions">
             <a href="pricing.html#hair" class="service-card__pricing-pill">View pricing</a>
             <a href="services-trust.html#trust-henna" class="service-card__trust-pill">Why trust us</a>
-            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+            <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20Could%20you%20let%20me%20know%20the%20available%20slots%3F" class="service-card__book" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('service_card')">Chat with Jessyca</a>
           </div>
         </article>
 
@@ -1351,7 +1402,7 @@
           <div class="service-card__actions">
             <a href="pricing.html" class="service-card__pricing-pill">View pricing</a>
             <a href="services-trust.html#trust-lashes" class="service-card__trust-pill">Why trust us</a>
-            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+            <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20Could%20you%20let%20me%20know%20the%20available%20slots%3F" class="service-card__book" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('service_card')">Chat with Jessyca</a>
           </div>
         </article>
 
@@ -1364,7 +1415,7 @@
           <div class="service-card__actions">
             <a href="pricing.html#makeup" class="service-card__pricing-pill">View pricing</a>
             <a href="services-trust.html#trust-makeup" class="service-card__trust-pill">Why trust us</a>
-            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+            <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20Could%20you%20let%20me%20know%20the%20available%20slots%3F" class="service-card__book" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('service_card')">Chat with Jessyca</a>
           </div>
         </article>
       </div>
@@ -1390,7 +1441,7 @@
           <div class="service-card__actions">
             <a href="pricing.html#other-treatments" class="service-card__pricing-pill">View pricing</a>
             <a href="services-trust.html#trust-ear-candling" class="service-card__trust-pill">Why trust us</a>
-            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+            <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20Could%20you%20let%20me%20know%20the%20available%20slots%3F" class="service-card__book" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('service_card')">Chat with Jessyca</a>
           </div>
         </article>
 
@@ -1403,7 +1454,7 @@
           <div class="service-card__actions">
             <a href="pricing.html#other-treatments" class="service-card__pricing-pill">View pricing</a>
             <a href="services-trust.html#trust-classic-pedicure" class="service-card__trust-pill">Why trust us</a>
-            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+            <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20Could%20you%20let%20me%20know%20the%20available%20slots%3F" class="service-card__book" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('service_card')">Chat with Jessyca</a>
           </div>
         </article>
 
@@ -1416,7 +1467,7 @@
           <div class="service-card__actions">
             <a href="pricing.html#other-treatments" class="service-card__pricing-pill">View pricing</a>
             <a href="services-trust.html#trust-basic-manicure" class="service-card__trust-pill">Why trust us</a>
-            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+            <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20Could%20you%20let%20me%20know%20the%20available%20slots%3F" class="service-card__book" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('service_card')">Chat with Jessyca</a>
           </div>
         </article>
 
@@ -1429,7 +1480,7 @@
           <div class="service-card__actions">
             <a href="pricing.html#other-treatments" class="service-card__pricing-pill">View pricing</a>
             <a href="services-trust.html#trust-henna-art" class="service-card__trust-pill">Why trust us</a>
-            <a href="https://wa.me/6584574640" class="service-card__book" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+            <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment.%20Could%20you%20let%20me%20know%20the%20available%20slots%3F" class="service-card__book" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('service_card')">Chat with Jessyca</a>
           </div>
         </article>
       </div>
@@ -1771,6 +1822,60 @@
           rel="noopener noreferrer"
         >See reviews on Google Maps</a>
       </p>
+
+      <div class="social-proof-bridge">
+        <p class="social-proof-bridge__text">Ready to experience what 100+ happy clients already love?</p>
+        <a
+          href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%20just%20read%20your%20reviews%20and%20I%E2%80%99d%20love%20to%20book%20an%20appointment.%20What%20times%20are%20available%3F"
+          class="btn-primary social-proof-bridge__cta"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="trackWhatsAppLead('social_proof_bridge')"
+        >Book Your Visit Now — Chat with Jessyca →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="faq-heading">Questions before you book?</h2>
+        <p>Quick answers so you can book with confidence.</p>
+      </div>
+
+      <div class="faq-grid">
+        <details class="faq-item" open>
+          <summary class="faq-item__question">Does eyebrow threading hurt?</summary>
+          <div class="faq-item__answer">
+            <p>Most clients say it's far gentler than waxing. Jessyca uses a fine cotton-thread technique that removes hair from the root with minimal skin contact. First-timers regularly tell us they "barely felt a thing." Any mild tingling fades within minutes, and there's no redness or irritation afterwards.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">How hygienic are your tools and studio?</summary>
+          <div class="faq-item__answer">
+            <p>Every tool is sanitised between clients, and single-use thread is discarded after each session. The studio is cleaned throughout the day, and Jessyca follows strict hygiene protocols developed over 15+ years of professional practice. Your safety is never an afterthought.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">How long does eyebrow embroidery last?</summary>
+          <div class="faq-item__answer">
+            <p>Results typically last 1–2 years depending on skin type and aftercare. A touch-up at the 12-month mark keeps your brows looking fresh. Jessyca maps every stroke to your bone structure so the shape ages gracefully — no blocky or unnatural fading.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="faq-cta">
+        <p>Still have questions?</p>
+        <a
+          href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%20have%20a%20quick%20question%20before%20booking.%20Could%20you%20help%3F"
+          class="btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="trackWhatsAppLead('faq_cta')"
+        >Ask Jessyca Directly →</a>
+      </div>
     </div>
   </section>
 
@@ -1842,7 +1947,7 @@
           <h2 class="footer__heading" id="footer-book-heading">Book</h2>
           <ul class="footer__links">
             <li>
-              <a href="https://wa.me/6584574640" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%20saw%20your%20page%20and%20would%20like%20to%20book%20an%20appointment.%20Could%20you%20help%20me%20with%20available%20slots%3F" target="_blank" rel="noopener noreferrer" onclick="trackWhatsAppLead('footer')">Chat with Jessyca</a>
             </li>
             <li><a href="contact.html">Contact form &amp; details</a></li>
           </ul>
@@ -1864,11 +1969,12 @@
 
   <a
     class="whatsapp-float"
-    href="https://wa.me/6584574640"
+    href="https://wa.me/6584574640?text=Hi%20Jessyca%2C%20I%20saw%20your%20page%20and%20would%20like%20to%20book%20an%20appointment.%20Could%20you%20help%20me%20with%20available%20slots%3F"
     target="_blank"
     rel="noopener noreferrer"
-    aria-label="Chat on WhatsApp with Tabernacle Beauty"
-    title="WhatsApp +65 8457 4640"
+    aria-label="Chat with Jessyca on WhatsApp"
+    title="Chat with Jessyca"
+    onclick="trackWhatsAppLead('floating_btn')"
   >
     <svg class="whatsapp-float__icon" viewBox="0 0 24 24" aria-hidden="true">
       <path
@@ -1879,6 +1985,35 @@
   </a>
 
   <script>
+    /**
+     * Fire a Meta Pixel "Lead" standard event when any WhatsApp CTA is clicked.
+     * Compatible with Conversions API (CAPI) — the browser-side event is
+     * deduplicated server-side using the event_id.
+     *
+     * Usage (plain HTML):  onclick="trackWhatsAppLead('hero_cta')"
+     *
+     * Next.js / React equivalent:
+     *   const trackWhatsAppLead = (source) => {
+     *     if (typeof window !== 'undefined' && window.fbq) {
+     *       const eventId = `lead_${source}_${Date.now()}`;
+     *       window.fbq('track', 'Lead', {
+     *         content_name: 'WhatsApp Booking Click',
+     *         content_category: source,
+     *       }, { eventID: eventId });
+     *     }
+     *   };
+     *   <button onClick={() => trackWhatsAppLead('hero_cta')}>Chat with Jessyca</button>
+     */
+    function trackWhatsAppLead(source) {
+      if (typeof fbq === 'function') {
+        var eventId = 'lead_' + source + '_' + Date.now();
+        fbq('track', 'Lead', {
+          content_name: 'WhatsApp Booking Click',
+          content_category: source
+        }, { eventID: eventId });
+      }
+    }
+
     const pills = document.querySelectorAll(".service-pill");
     const heroTitle = document.getElementById("heroCardTitle");
     const heroText = document.getElementById("heroCardText");
