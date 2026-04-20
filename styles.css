@@ -557,11 +557,14 @@ body.nav-drawer-open {
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.55), transparent);
   transform: skewX(-20deg);
-  transition: left 0.7s ease;
+  opacity: 0;
+  transition: none;
 }
 
 .btn-primary:hover::before {
   left: 140%;
+  opacity: 1;
+  transition: left 0.7s ease, opacity 0.1s ease;
 }
 
 .btn-primary:hover {
@@ -1770,8 +1773,16 @@ body.nav-drawer-open {
     transition-duration: 0.01ms !important;
   }
 
+  .btn-primary::before,
   .service-card::after {
     display: none !important;
+    animation: none !important;
+  }
+
+  .tripwire__card,
+  .faq-item,
+  .social-proof-bridge,
+  .hero-sub-headline {
     animation: none !important;
   }
 
@@ -2854,6 +2865,11 @@ body.nav-drawer-open {
 .tripwire__cta {
   font-size: 1.05rem;
   padding: 18px 32px;
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;
+  word-wrap: break-word;
+  box-sizing: border-box;
 }
 
 /* —— Social proof bridge CTA (after reviews) —— */
@@ -2996,8 +3012,11 @@ body.nav-drawer-open {
   }
 
   .tripwire__cta {
-    font-size: 0.95rem;
-    padding: 16px 24px;
+    font-size: 0.88rem;
+    padding: 16px 20px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.4;
   }
 
   .social-proof-bridge {
