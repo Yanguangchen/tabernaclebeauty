@@ -50,12 +50,36 @@ Marketing site for **Tabernacle Beauty**: glass / neumorphic styling, hero with 
 - **`firestore.rules`** — Deploy via **`firebase.json`** (`firebase deploy --only firestore:rules`). **Read** public on `posts`. **Write** only if **`isBlogEditor()`** (hard-coded Firebase Auth UID) and `authorUid` on the document matches `request.auth.uid`.
 - **`README.md`** — Quick start, project layout, Firebase checklist, links to deeper notes below.
 
-## Booking & contact
+## Booking & contact (CRO-optimised)
 
-- **WhatsApp:** `https://wa.me/6584574640` (+65 8457 4640).
-- **Navbar:** `.nav-cta` “Book your visit” → `wa.me` (new tab).
-- **Floating:** `.whatsapp-float` — same URL, fixed bottom-right. **Blog editor:** `.footer__signin` in the footer **Explore** column on `index`, `contact`, `blog`, and `pricing` → `admin.html`.
-- **Hero:** Primary in-hero CTA is **Explore All Treatments** → `#services`; booking via nav, float, and service-card **Book on WhatsApp** links. **View pricing** pills on each card → `pricing.html` (with hash to the relevant section when applicable).
+- **WhatsApp:** `https://wa.me/6584574640` (+65 8457 4640). All CTAs now include a **pre-filled message** (URL-encoded `?text=…`) for low-friction booking.
+- **Navbar:** `.nav-cta` "**Chat with Jessyca**" → `wa.me` with pre-filled text (new tab) + `onclick="trackWhatsAppLead('nav_cta')"`.  
+- **Service cards:** "Book on WhatsApp" → "**Chat with Jessyca**" with pre-filled message and Meta Pixel tracking.
+- **Social proof bridge:** Booking CTA block (`.social-proof-bridge`) inserted directly after the Google reviews carousel.
+- **FAQ CTA:** "**Ask Jessyca Directly →**" at the bottom of the objection-handling FAQ.
+- **Floating:** `.whatsapp-float` — same pattern with pre-filled text and tracking. **Blog editor:** `.footer__signin` in the footer **Explore** column on `index`, `contact`, `blog`, and `pricing` → `admin.html`.
+- **Hero:** Primary CTA is now **"Chat with Jessyca →"** (`.btn-primary`) linking to WhatsApp. Secondary CTA remains **Explore All Treatments** → `#services`.
+
+
+## CRO structure (Meta Ads conversion flow)
+
+The homepage is restructured for cold Meta Ads traffic → WhatsApp booking conversions:
+
+1. **Hero** — Location hook ("Tampines' Trusted Beauty Studio") + emotional sub-headline + primary WhatsApp CTA
+2. **Tripwire** (`#tripwire`) — Featured "Painless Eyebrow Threading" from $9 entry-level offer to drive first visits
+3. **Core services** — Service grid with personalised "Chat with Jessyca" on each card
+4. **Other services** — Additional treatments
+5. **Reviews** — Google reviews carousel (social proof)
+6. **Social proof bridge** — "Ready to experience what 100+ happy clients already love?" + immediate booking CTA
+7. **FAQ** (`#faq`) — 3-question objection handler: threading pain, hygiene, embroidery longevity
+8. **Visit** — Map + Facebook feed
+9. **Footer** — Navigation + booking column
+
+## Meta Pixel tracking
+
+- **Base code** in `<head>` — standard `fbevents.js` init with `PageView`. Replace `YOUR_PIXEL_ID` with the actual Facebook Pixel ID.
+- **`trackWhatsAppLead(source)`** — fires `fbq('track', 'Lead', …)` with a unique `eventID` for CAPI deduplication. Called via `onclick` on every WhatsApp CTA. Sources: `nav_cta`, `drawer_cta`, `hero_cta`, `tripwire_threading`, `service_card`, `social_proof_bridge`, `faq_cta`, `floating_btn`, `footer`.
+- **Next.js/React equivalent** is documented inline in the script block for future migration.
 
 ## Conventions
 
