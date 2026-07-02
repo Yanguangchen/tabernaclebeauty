@@ -134,11 +134,120 @@
         </p>
       </header>
 
-      <p class="blog-status" id="blogStatus" role="status" aria-live="polite"></p>
+      <div class="blog-categories" aria-label="Blog categories">
+        <button class="blog-category active" type="button">All</button>
+        <button class="blog-category" type="button">Treatments</button>
+        <button class="blog-category" type="button">Beauty Tips</button>
+        <button class="blog-category" type="button">Studio News</button>
+      </div>
 
       <section class="blog-posts-section" aria-labelledby="blog-posts-heading">
-        <h2 class="blog-posts-section__title" id="blog-posts-heading">Recent posts</h2>
-        <div class="blog-posts" id="blogPosts"></div>
+        <h2 class="sr-only" id="blog-posts-heading">Recent posts</h2>
+        <div class="blog-posts">
+
+          <article class="blog-post blog-post--featured">
+            <div class="blog-post__image-wrapper">
+              <img src="Assets/skin_prep.jpg" alt="Woman washing face gently" class="blog-post__image" loading="lazy" />
+            </div>
+            <div class="blog-post__content">
+              <span class="blog-post__badge">Featured</span>
+              <h2 class="blog-post__title">How to prep your skin before a facial</h2>
+              <p class="blog-post__meta">15 March 2026 · Beauty Tips</p>
+              <div class="blog-post__body">
+                <p>Arrive with clean skin and skip heavy makeup on the day of your appointment. A gentle cleanse the night before is enough — we will take care of the rest in-studio.</p>
+                <p>If you use retinol or exfoliating acids, let us know when you book so we can tailor your treatment. Hydrate well and avoid direct sun for 24 hours after your facial for the best glow.</p>
+              </div>
+              <a href="#" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="blog-post">
+            <div class="blog-post__image-wrapper">
+              <img src="Assets/brow_shaping.jpg" alt="Close up of perfect brows" class="blog-post__image" loading="lazy" />
+            </div>
+            <div class="blog-post__content">
+              <h2 class="blog-post__title">Brow shaping: threading vs waxing</h2>
+              <p class="blog-post__meta">3 March 2026 · Treatments</p>
+              <div class="blog-post__body">
+                <p>Threading gives precise, clean lines and is ideal for sensitive skin around the eyes. Waxing is quick and works well when you want a fuller reshape with longer-lasting results.</p>
+                <p>Not sure which suits you? Message us on WhatsApp with a photo of your brows and we will recommend the right option before your visit.</p>
+              </div>
+              <a href="#" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="blog-post">
+            <div class="blog-post__image-wrapper">
+              <img src="Assets/beauty_tampines.jpg" alt="Cozy modern salon interior" class="blog-post__image" loading="lazy" />
+            </div>
+            <div class="blog-post__content">
+              <h2 class="blog-post__title">Top 3 beauty trends in Tampines North for 2026</h2>
+              <p class="blog-post__meta">1 March 2026 · Studio News</p>
+              <div class="blog-post__body">
+                <p>We are seeing a huge shift towards natural-looking enhancements in the Tampines North area. From subtle lash lifts to skin-first facial treatments, the focus is on looking like yourself, but rested.</p>
+                <p>Read about the top requested treatments at our studio and how you can achieve that effortless everyday glow without a heavy makeup routine.</p>
+              </div>
+              <a href="#" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="blog-post">
+            <div class="blog-post__image-wrapper">
+              <img src="Assets/lash_extensions.jpg" alt="Natural eyelash extensions" class="blog-post__image" loading="lazy" />
+            </div>
+            <div class="blog-post__content">
+              <h2 class="blog-post__title">The ultimate guide to aftercare for eyelash extensions</h2>
+              <p class="blog-post__meta">24 February 2026 · Treatments</p>
+              <div class="blog-post__body">
+                <p>To keep your lashes looking full and fluttery, avoid water and steam for the first 24 hours. Gently brush them daily with a clean spoolie to prevent tangling.</p>
+                <p>Steer clear of oil-based makeup removers, as they can break down the lash adhesive. Stick to oil-free cleansers and treat your extensions with care to maximize their lifespan.</p>
+              </div>
+              <a href="#" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="blog-post">
+            <div class="blog-post__image-wrapper">
+              <img src="Assets/body_waxing.jpg" alt="Smooth prepped leg" class="blog-post__image" loading="lazy" />
+            </div>
+            <div class="blog-post__content">
+              <h2 class="blog-post__title">Why regular body waxing is better than shaving</h2>
+              <p class="blog-post__meta">18 February 2026 · Beauty Tips</p>
+              <div class="blog-post__body">
+                <p>Waxing removes hair from the root, meaning it takes much longer to grow back compared to shaving. Over time, regular waxing can also make your hair grow back finer and softer.</p>
+                <p>Plus, it acts as a gentle exfoliation, removing dead skin cells and leaving your skin feeling incredibly smooth and refreshed for weeks.</p>
+              </div>
+              <a href="#" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="blog-post">
+            <div class="blog-post__image-wrapper">
+              <img src="Assets/spa_day.jpg" alt="Relaxing spa setup" class="blog-post__image" loading="lazy" />
+            </div>
+            <div class="blog-post__content">
+              <h2 class="blog-post__title">Self-care Sunday: recreating a spa day at home</h2>
+              <p class="blog-post__meta">12 February 2026 · Studio News</p>
+              <div class="blog-post__body">
+                <p>Can't make it to the studio this week? You can still treat yourself to a luxurious spa day at home. Start by setting the mood with dim lighting, soft music, and a calming candle.</p>
+                <p>Incorporate a hydrating face mask, a warm bath with epsom salts, and finish with a rich body butter. Taking time for yourself is essential for both your skin and your mind.</p>
+              </div>
+              <a href="#" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="newsletter-section">
+        <div class="newsletter-inner">
+          <h2 class="newsletter__title">Stay Glowing</h2>
+          <p class="newsletter__text">Join our mailing list for exclusive Tampines North studio updates, seasonal skincare tips, and early access to promotions.</p>
+          <form class="newsletter__form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+            <input type="email" placeholder="Your email address" required class="newsletter__input" aria-label="Email address for newsletter" />
+            <button type="submit" class="newsletter__submit">Subscribe</button>
+          </form>
+        </div>
       </section>
     </div>
   </main>
@@ -163,9 +272,6 @@
             <li><a href="index.html#visit">Visit &amp; map</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-          <p class="footer__signin-wrap">
-            <a href="admin.html" class="footer__signin btn-secondary" aria-label="Sign in to blog editor">Sign in</a>
-          </p>
         </nav>
 
         <nav class="footer__col" aria-labelledby="footer-services-heading">
@@ -274,6 +380,5 @@
       });
     })();
   </script>
-  <script type="module" src="js/blog-read.js"></script>
 </body>
 </html>
