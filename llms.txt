@@ -166,8 +166,13 @@ Published Google review excerpts on the homepage (all shown as 5 stars):
 
 ## Journal
 
-Posts are on the blog page. Each link jumps to that note.
+Three in-depth guides each have their own URL and are listed in the sitemap. Shorter notes stay on the blog page.
 
+- [Eyebrow threading in Tampines: a first-visit guide](https://www.tabernaclebeauty.com/eyebrow-threading-guide.html): 28 September 2026. Feel, timing, walk-ins, the threading price list from $9, hygiene, and aftercare.
+- [How to choose a facial in Tampines](https://www.tabernaclebeauty.com/how-to-choose-a-facial.html): 28 September 2026. Matches skin concerns to the facial menu from classic at $60 to LED at $170.
+- [Eyebrow embroidery: healing, aftercare, and how long it lasts](https://www.tabernaclebeauty.com/eyebrow-embroidery-aftercare.html): 28 September 2026. Typical 1–2 year wear, healing stages, and aftercare. Embroidery is quoted, not given a fixed public price.
+
+Shorter notes on the blog page:
 - [How to prep your skin before a facial](https://www.tabernaclebeauty.com/blog.html#prep-skin-before-facial): 15 March 2026. Arrive with clean skin, skip heavy makeup, mention retinol or acids when booking, and avoid direct sun for 24 hours afterwards. [Facials](https://www.tabernaclebeauty.com/pricing.html#facials).
 - [Brow shaping: threading vs waxing](https://www.tabernaclebeauty.com/blog.html#threading-vs-waxing): 3 March 2026. Threading is precise and kinder around the eyes; waxing is quicker for a fuller reshape. [Threading](https://www.tabernaclebeauty.com/pricing.html#threading) · [Waxing](https://www.tabernaclebeauty.com/pricing.html#waxing).
 - [Top 3 beauty trends in Tampines North for 2026](https://www.tabernaclebeauty.com/blog.html#tampines-trends-2026): 1 March 2026. Natural-looking lashes and skin-first facials.
