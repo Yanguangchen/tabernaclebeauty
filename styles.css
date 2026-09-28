@@ -30,8 +30,26 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial");
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Playfair Fallback";
+  src: local("Times New Roman");
+  size-adjust: 112%;
+  ascent-override: 95%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Inter Fallback", sans-serif;
   color: var(--text-main);
   background:
     radial-gradient(circle at 15% 20%, rgba(242, 190, 209, 0.55), transparent 22%),
@@ -98,7 +116,7 @@ body::before {
 }
 
 .brand {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -273,7 +291,7 @@ body::before {
 }
 
 .nav-mobile-drawer__brand {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -381,7 +399,7 @@ a.nav-mobile-drawer__brand {
 }
 
 .nav-mobile-drawer__link--accent {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: 1.28rem;
   font-weight: 600;
   background: rgba(255, 255, 255, 0.32);
@@ -491,7 +509,7 @@ body.nav-drawer-open {
 }
 
 .hero h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: clamp(3.2rem, 6vw, 5.9rem);
   line-height: 0.96;
   letter-spacing: -0.04em;
@@ -709,7 +727,7 @@ body.nav-drawer-open {
 }
 
 .card-content h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: 1.85rem;
   margin-bottom: 10px;
   transition: color var(--motion-duration-fast) ease, opacity var(--motion-duration-fast) ease;
@@ -837,7 +855,7 @@ body.nav-drawer-open {
 }
 
 .section-header h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: clamp(2.2rem, 4vw, 3.2rem);
   margin-bottom: 14px;
   transition: color var(--motion-duration-fast) ease, opacity var(--motion-duration-fast) ease;
@@ -993,7 +1011,7 @@ body.nav-drawer-open {
 }
 
 .service-card h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: 1.5rem;
   margin-bottom: 10px;
   position: relative;
@@ -1284,7 +1302,7 @@ body.nav-drawer-open {
 }
 
 .review-card__name {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: 1.15rem;
   font-weight: 600;
   color: var(--text-main);
@@ -1381,6 +1399,7 @@ body.nav-drawer-open {
   width: 100%;
   min-width: 80%;
   margin: 0 auto 32px;
+  min-height: 280px;
 }
 
 .map-section__elfsight .elfsight-app-7618450d-b4c7-499e-88b7-c23bb7ada406 {
@@ -1457,7 +1476,7 @@ body.nav-drawer-open {
 }
 
 .footer__logo {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: 1.45rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -2010,7 +2029,7 @@ body.nav-drawer-open {
 }
 
 .blog-page-header__title {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: clamp(2.2rem, 4.5vw, 3.2rem);
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -2026,7 +2045,7 @@ body.nav-drawer-open {
 }
 
 .blog-posts-section__title {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: 1.65rem;
   text-align: center;
   margin-bottom: 28px;
@@ -2099,7 +2118,7 @@ body.nav-drawer-open {
 }
 
 .blog-post__title {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: 1.45rem;
   margin: 0 0 8px;
   color: var(--text-main);
@@ -2232,7 +2251,7 @@ body.nav-drawer-open {
 }
 
 .newsletter__title {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: 2rem;
   color: var(--text-main);
   margin-bottom: 16px;
@@ -2320,7 +2339,7 @@ body.nav-drawer-open {
 }
 
 .contact-intro h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: clamp(2.4rem, 5vw, 3.4rem);
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -2378,7 +2397,7 @@ body.nav-drawer-open {
 }
 
 .contact-panel h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: 1.45rem;
   margin-bottom: 12px;
   color: var(--text-main);
@@ -2402,6 +2421,7 @@ body.nav-drawer-open {
   align-items: center;
   gap: 8px;
   margin-top: 6px;
+  margin-right: 14px;
   font-weight: 600;
   color: var(--pink-5);
   text-decoration: none;
@@ -2511,7 +2531,7 @@ body.nav-drawer-open {
 }
 
 .trust-intro h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: clamp(2.4rem, 5vw, 3.4rem);
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -2556,7 +2576,7 @@ body.nav-drawer-open {
 }
 
 .trust-categories__heading {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: clamp(1.65rem, 3vw, 2.1rem);
   font-weight: 700;
   text-align: center;
@@ -2585,7 +2605,7 @@ body.nav-drawer-open {
 }
 
 .trust-category h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: 12px;
@@ -2656,7 +2676,7 @@ body.nav-drawer-open {
 }
 
 .pricing-intro h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: clamp(2.4rem, 5vw, 3.4rem);
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -2723,7 +2743,7 @@ body.nav-drawer-open {
 }
 
 .pricing-section h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: clamp(1.5rem, 3vw, 1.85rem);
   margin-bottom: 18px;
   color: var(--text-main);
@@ -2871,7 +2891,7 @@ body.nav-drawer-open {
 }
 
 .tripwire__card h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   margin-bottom: 14px;
   color: var(--text-main);
@@ -2933,7 +2953,7 @@ body.nav-drawer-open {
 }
 
 .social-proof-bridge__text {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: clamp(1.25rem, 2.5vw, 1.65rem);
   color: var(--text-main);
   margin-bottom: 20px;
@@ -2982,7 +3002,7 @@ body.nav-drawer-open {
 
 .faq-item__question {
   padding: 20px 24px;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: 1.15rem;
   font-weight: 600;
   color: var(--text-main);
@@ -3044,7 +3064,7 @@ body.nav-drawer-open {
 }
 
 .faq-cta p {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Playfair Fallback", Georgia, serif;
   font-size: 1.15rem;
   color: var(--text-main);
   margin-bottom: 16px;
@@ -3073,4 +3093,51 @@ body.nav-drawer-open {
   .faq-item__answer {
     padding: 0 20px 18px;
   }
+}
+
+.breadcrumbs {
+  margin: 0 0 16px;
+  font-size: 0.92rem;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--text-muted);
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: "/";
+  margin-left: 8px;
+  opacity: 0.55;
+}
+
+.breadcrumbs a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: var(--text-main);
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.services--other,
+.reviews-section,
+.faq-section,
+.map-section,
+.footer,
+.newsletter-section,
+.trust-categories {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 720px;
 }
