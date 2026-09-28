@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-SG">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
@@ -19,6 +19,9 @@
   <meta name="author" content="Tabernacle Beauty" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.tabernaclebeauty.com/pricing.html" />
+  <link rel="alternate" hreflang="en-SG" href="https://www.tabernaclebeauty.com/pricing.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.tabernaclebeauty.com/pricing.html" />
+  <link rel="alternate" type="text/plain" href="https://www.tabernaclebeauty.com/llms.txt" title="LLM-readable site summary" />
 
   <meta property="og:site_name" content="Tabernacle Beauty" />
   <meta property="og:type" content="website" />
@@ -26,24 +29,29 @@
   <meta property="og:title" content="Pricing — Tabernacle Beauty" />
   <meta property="og:description" content="Full treatment price list — waxing, hair, facials, makeup, threading, and packages." />
   <meta property="og:url" content="https://www.tabernaclebeauty.com/pricing.html" />
-  <meta property="og:image" content="https://www.tabernaclebeauty.com/Assets/favicon.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:alt" content="Tabernacle Beauty" />
+  <meta property="og:image" content="https://www.tabernaclebeauty.com/Assets/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:alt" content="Tabernacle Beauty studio in Tampines, Singapore" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Pricing — Tabernacle Beauty" />
   <meta name="twitter:description" content="Treatment price list for our Singapore studio." />
-  <meta name="twitter:image" content="https://www.tabernaclebeauty.com/Assets/favicon.png" />
-  <meta name="twitter:image:alt" content="Tabernacle Beauty" />
+  <meta name="twitter:image" content="https://www.tabernaclebeauty.com/Assets/og-cover.jpg" />
+  <meta name="twitter:image:alt" content="Tabernacle Beauty studio in Tampines, Singapore" />
 
   <link rel="manifest" href="manifest.json" />
-  <link rel="icon" type="image/png" href="Assets/favicon.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="Assets/favicon.png" sizes="192x192" />
-  <link rel="apple-touch-icon" href="Assets/favicon.png" />
+  <link rel="icon" type="image/png" href="Assets/icons/favicon-32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="Assets/icons/icon-192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="Assets/icons/apple-touch-icon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"></noscript>
+  <link rel="preload" href="styles.css" as="style">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="page-pricing">
@@ -56,6 +64,7 @@
         <li><a href="index.html#services">Services</a></li>
         <li><a href="pricing.html" aria-current="page">Pricing</a></li>
         <li><a href="services-trust.html">Why trust us</a></li>
+        <li><a href="index.html#reviews">Reviews</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -108,6 +117,7 @@
           <a href="index.html#services" class="nav-mobile-drawer__link">Services</a>
           <a href="pricing.html" class="nav-mobile-drawer__link" aria-current="page">Pricing</a>
           <a href="services-trust.html" class="nav-mobile-drawer__link">Why trust us</a>
+          <a href="index.html#reviews" class="nav-mobile-drawer__link">Reviews</a>
           <a href="blog.html" class="nav-mobile-drawer__link">Blog</a>
           <a href="contact.html" class="nav-mobile-drawer__link">Contact</a>
         </nav>
@@ -143,6 +153,12 @@
 
     <div class="container pricing-main__inner">
       <header class="pricing-intro">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Pricing</li>
+          </ol>
+        </nav>
         <h1>Pricing</h1>
         <p>
           Current menu pricing for Tabernacle Beauty. For the latest availability and personalised quotes, message us on WhatsApp.
@@ -290,6 +306,8 @@
       <p class="pricing-footnote">
         <a href="https://wa.me/6584574640" class="pricing-footnote__link" target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
         · <a href="contact.html" class="pricing-footnote__link">Contact</a>
+        · <a href="services-trust.html" class="pricing-footnote__link">Why trust us</a>
+        · <a href="blog.html" class="pricing-footnote__link">Care guides</a>
         · <a href="index.html#services" class="pricing-footnote__link">All services</a>
       </p>
     </div>
@@ -312,6 +330,8 @@
             <li><a href="index.html#services">Services</a></li>
             <li><a href="pricing.html" aria-current="page">Pricing</a></li>
             <li><a href="services-trust.html">Why trust us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
             <li><a href="index.html#reviews">Reviews</a></li>
             <li><a href="index.html#visit">Visit &amp; map</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -324,7 +344,9 @@
             <li><a href="index.html#service-brows">Brow styling</a></li>
             <li><a href="index.html#service-facials">Facial treatments</a></li>
             <li><a href="index.html#service-waxing">Body waxing</a></li>
+            <li><a href="index.html#service-threading">Full face threading</a></li>
             <li><a href="index.html#service-lashes">Eyelash extensions</a></li>
+            <li><a href="blog.html">Care guides</a></li>
             <li><a href="index.html#services">All services</a></li>
           </ul>
         </nav>
@@ -343,13 +365,12 @@
 
       <div class="footer__bottom">
         <p class="footer__copyright">© 2026 Tabernacle Beauty. All rights reserved.</p>
-        <p class="footer__fine">Expert care you can trust. | Made by <a href="https://webwizardsg.com" target="_blank" rel="noopener noreferrer">Web Wizards SG</a></p>
+        <p class="footer__fine">Expert care you can trust. | <a href="llms.txt">AI site summary</a> | Made by <a href="https://webwizardsg.com" target="_blank" rel="noopener noreferrer">Web Wizards SG</a></p>
       </div>
     </div>
   </footer>
 
   <!-- Elfsight AI Chatbot | Tabernacle Beauty -->
-  <script src="https://elfsightcdn.com/platform.js" async></script>
   <div class="elfsight-ai-chat" aria-label="AI chat assistant">
     <div class="elfsight-app-9d5edfd9-27d3-4846-9f54-422f2a305441" data-elfsight-app-lazy></div>
   </div>
@@ -423,6 +444,2014 @@
         }
       });
     })();
+  </script>
+  <script>
+    window.addEventListener("load", function () {
+      var elf = document.createElement("script");
+      elf.src = "https://elfsightcdn.com/platform.js";
+      elf.async = true;
+      document.body.appendChild(elf);
+    });
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.tabernaclebeauty.com/#website",
+      "url": "https://www.tabernaclebeauty.com/",
+      "name": "Tabernacle Beauty",
+      "description": "Brows, lashes, facials, creambath hair, threading, eyebrow embroidery, henna brows, hair colouring, makeup, and body waxing in Tampines, Singapore. Book on WhatsApp.",
+      "inLanguage": "en-SG",
+      "publisher": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tabernaclebeauty.com/pricing.html#webpage",
+      "url": "https://www.tabernaclebeauty.com/pricing.html",
+      "name": "Pricing — Tabernacle Beauty | Treatment price list Singapore",
+      "description": "Waxing, hair treatments, facials, makeup, threading, packages, and more. Prices in SGD.",
+      "isPartOf": {
+        "@id": "https://www.tabernaclebeauty.com/#website"
+      },
+      "about": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "inLanguage": "en-SG",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.tabernaclebeauty.com/Assets/og-cover.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "dateModified": "2026-09-28",
+      "mainEntity": {
+        "@id": "https://www.tabernaclebeauty.com/pricing.html#offer-catalog"
+      }
+    },
+    {
+      "@type": "BeautySalon",
+      "@id": "https://www.tabernaclebeauty.com/#business",
+      "name": "Tabernacle Beauty",
+      "alternateName": "Tabernacle Beauty Service",
+      "url": "https://www.tabernaclebeauty.com/",
+      "image": "https://www.tabernaclebeauty.com/Assets/og-cover.jpg",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.tabernaclebeauty.com/Assets/icons/icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "description": "Expert brow styling, facials, body waxing, hair colouring, lash extensions, makeup, creambath, threading, eyebrow embroidery, and henna brows in a calm Tampines, Singapore studio. Appointments recommended; eyebrow threading welcomes walk-ins.",
+      "telephone": "+6584574640",
+      "currenciesAccepted": "SGD",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tampines",
+        "addressRegion": "Singapore",
+        "addressCountry": "SG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 1.368182,
+        "longitude": 103.936726
+      },
+      "hasMap": "https://www.google.com/maps/place/Tabernacle+Beauty+Service/",
+      "sameAs": [
+        "https://www.google.com/maps/place/Tabernacle+Beauty+Service/"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Tampines"
+        },
+        {
+          "@type": "Country",
+          "name": "Singapore"
+        }
+      ],
+      "knowsLanguage": "en",
+      "employee": {
+        "@type": "Person",
+        "name": "Jessyca",
+        "jobTitle": "Owner and brow specialist"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+6584574640",
+        "contactType": "reservations",
+        "availableLanguage": [
+          "English"
+        ],
+        "areaServed": "SG",
+        "url": "https://wa.me/6584574640"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Book on WhatsApp",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://wa.me/6584574640",
+          "actionPlatform": [
+            "https://schema.org/DesktopWebPlatform",
+            "https://schema.org/MobileWebPlatform"
+          ]
+        }
+      },
+      "hasOfferCatalog": {
+        "@id": "https://www.tabernaclebeauty.com/pricing.html#offer-catalog"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "100"
+      }
+    },
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://www.tabernaclebeauty.com/pricing.html#offer-catalog",
+      "name": "Tabernacle Beauty treatment price list",
+      "url": "https://www.tabernaclebeauty.com/pricing.html",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Full face",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "35.00",
+          "description": "Men $40."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Upper lip",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "10.00",
+          "description": "Men $12."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Eyebrow",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "12.00",
+          "description": "Men $15."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Underarm",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "20.00",
+          "description": "Men $25."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Full hand",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "35.00",
+          "description": "Men $40."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Half hand",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "28.00",
+          "description": "Men $33."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Full legs",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "45.00",
+          "description": "Men $50."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Half legs",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "35.00",
+          "description": "Men $40."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Bikini",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "28.00",
+          "description": "Ladies only."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Full body",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "180.00",
+          "description": "Ladies only."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Full back",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "35.00",
+          "description": "Men $40."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Stomach",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "30.00",
+          "description": "Men $35."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Full arm and full leg",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "80.00",
+          "description": "Men $90."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Upper lip and chin",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "15.00",
+          "description": "Men $20."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Waxing — Brazilian",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#waxing",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "55.00",
+          "description": "Ladies only."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hair — Henna treatment",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "55.00",
+            "maxPrice": "75.00"
+          },
+          "description": "Excluding colouring."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hair — Hair falling treatment",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "45.00",
+            "maxPrice": "65.00"
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hair — Hot oil massage",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "45.00",
+            "maxPrice": "55.00"
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hair — Protein treatment",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "45.00",
+            "maxPrice": "55.00"
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hair — Avocado treatment",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "45.00",
+            "maxPrice": "55.00"
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hair — Carrot treatment",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "45.00",
+            "maxPrice": "55.00"
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hair — Aloe Vera treatment",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "45.00",
+            "maxPrice": "55.00"
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hair — Herbal hair treatment",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "50.00",
+            "maxPrice": "55.00"
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hair — Candles nut hair treatment",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "45.00",
+            "maxPrice": "55.00"
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hair — Layer haircut",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "18.00",
+            "maxPrice": "25.00"
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hair — Basic haircut",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "15.00",
+          "description": "From $15."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hair — V cut",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#hair",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "15.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Deep cleansing",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "70.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Galvanic facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "100.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Classic facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "60.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Hydrafacial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "130.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Brightening facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "90.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Lymphatic massage facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "90.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Anti aging facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "130.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — High frequency facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "110.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Face lifting facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "150.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — 24 carat gold facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "110.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Pearl facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "100.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Diamond facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "100.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Fruits facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "90.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Herbal facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "85.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Electric facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "120.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Acne treatment",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "95.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Signature facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "130.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Detox deep pore facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "100.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Collagen facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "130.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Gua sha facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "95.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Eye treatment",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "55.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Korean facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "100.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — LED light facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "170.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Bridal glow facial",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "120.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facial — Use of facial device (add-on)",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#facials",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "38.00",
+            "maxPrice": "80.00"
+          },
+          "description": "Extra charge."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#makeup",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Makeup — Personal",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#makeup",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "100.00",
+            "maxPrice": "180.00"
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#makeup",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Makeup — Bridal",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#makeup",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "350.00",
+          "description": "From $350."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#makeup",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Makeup — Engagement",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#makeup",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "250.00",
+          "description": "From $250."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#makeup",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Makeup — Birthday",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#makeup",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "200.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#makeup",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Makeup — ROM",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#makeup",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "250.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Threading — Full face threading",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "25.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Threading — Eyebrow",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "9.00",
+            "maxPrice": "10.00"
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Threading — Upper lip",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "5.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Threading — Lower lip",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "4.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Threading — Side burns",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "10.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Threading — Chin",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "5.00",
+            "maxPrice": "8.00"
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Threading — Forehead",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "5.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Threading — Brow tinting",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "28.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Threading — Eyebrow, upper lip and chin combo",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "17.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Threading — Lower chin",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#threading",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "SGD",
+            "minPrice": "5.00",
+            "maxPrice": "10.00"
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#beauty-course",
+          "availability": "https://schema.org/InStock",
+          "description": "All prices on request. Personal makeup, bridal makeup, pedicure, manicure, hair treatment, body massage, pre or post natal massage, waxing, threading, facial, eyebrow tinting, body treatment, basic haircut.",
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Beauty course",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#beauty-course",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#other-treatments",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ear candling",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#other-treatments",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "20.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#other-treatments",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Classic pedicure",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#other-treatments",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "30.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#other-treatments",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Basic manicure",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#other-treatments",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "20.00"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#other-treatments",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Henna art work (per hand)",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#other-treatments",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "10.00",
+          "description": "Adults $10, children $5; extra design from $15."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#packages",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Package — Classic facial (10 sessions)",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#packages",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "550.00",
+          "description": "10 sessions including discount."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#packages",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Package — Henna treatment long hair (10 sessions)",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#packages",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "650.00",
+          "description": "10 sessions including discount."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#packages",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Package — Henna treatment short hair (10 sessions)",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#packages",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "500.00",
+          "description": "10 sessions including discount."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#packages",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Package — Eyebrow threading (10 sessions)",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#packages",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          },
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "priceCurrency": "SGD",
+          "price": "70.00",
+          "description": "10 sessions including discount."
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/pricing.html#packages",
+          "description": "Available on request. 10-session packages include discount where applicable.",
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Other packages",
+            "url": "https://www.tabernaclebeauty.com/pricing.html#packages",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/#service-lashes",
+          "description": "Quoted on request. Message on WhatsApp.",
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Eyelash extensions",
+            "url": "https://www.tabernaclebeauty.com/#service-lashes",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/#service-embroidery",
+          "description": "Quoted on request. Results typically last 1–2 years.",
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Eyebrow embroidery",
+            "url": "https://www.tabernaclebeauty.com/#service-embroidery",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://www.tabernaclebeauty.com/#service-creambath",
+          "description": "Deep-conditioning creambath with scalp massage. Message for a quote; related hair treatments are priced on the hair menu.",
+          "seller": {
+            "@id": "https://www.tabernaclebeauty.com/#business"
+          },
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Creambath hair treatment",
+            "url": "https://www.tabernaclebeauty.com/#service-creambath",
+            "provider": {
+              "@id": "https://www.tabernaclebeauty.com/#business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Singapore"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.tabernaclebeauty.com/pricing.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.tabernaclebeauty.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Pricing",
+          "item": "https://www.tabernaclebeauty.com/pricing.html"
+        }
+      ]
+    }
+  ]
+}
   </script>
 </body>
 </html>

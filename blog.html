@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-SG">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
@@ -15,8 +15,12 @@
 
   <title>Blog — Tabernacle Beauty | Singapore</title>
   <meta name="description" content="Tabernacle Beauty — beauty tips, studio news, and care guides from our Singapore team." />
+  <meta name="author" content="Tabernacle Beauty" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.tabernaclebeauty.com/blog.html" />
+  <link rel="alternate" hreflang="en-SG" href="https://www.tabernaclebeauty.com/blog.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.tabernaclebeauty.com/blog.html" />
+  <link rel="alternate" type="text/plain" href="https://www.tabernaclebeauty.com/llms.txt" title="LLM-readable site summary" />
 
   <meta property="og:site_name" content="Tabernacle Beauty" />
   <meta property="og:type" content="website" />
@@ -24,16 +28,29 @@
   <meta property="og:title" content="Blog — Tabernacle Beauty" />
   <meta property="og:description" content="Beauty tips and updates from Tabernacle Beauty, Singapore." />
   <meta property="og:url" content="https://www.tabernaclebeauty.com/blog.html" />
-  <meta property="og:image" content="https://www.tabernaclebeauty.com/Assets/favicon.png" />
+  <meta property="og:image" content="https://www.tabernaclebeauty.com/Assets/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:alt" content="Tabernacle Beauty studio in Tampines, Singapore" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog — Tabernacle Beauty" />
+  <meta name="twitter:description" content="Beauty tips and updates from Tabernacle Beauty, Singapore." />
+  <meta name="twitter:image" content="https://www.tabernaclebeauty.com/Assets/og-cover.jpg" />
+  <meta name="twitter:image:alt" content="Tabernacle Beauty studio in Tampines, Singapore" />
 
   <link rel="manifest" href="manifest.json" />
-  <link rel="icon" type="image/png" href="Assets/favicon.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="Assets/favicon.png" sizes="192x192" />
-  <link rel="apple-touch-icon" href="Assets/favicon.png" />
+  <link rel="icon" type="image/png" href="Assets/icons/favicon-32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="Assets/icons/icon-192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="Assets/icons/apple-touch-icon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"></noscript>
+  <link rel="preload" href="styles.css" as="style">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="page-blog">
@@ -44,6 +61,7 @@
       <ul class="nav-links">
         <li><a href="index.html#home">Home</a></li>
         <li><a href="index.html#services">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
         <li><a href="services-trust.html">Why trust us</a></li>
         <li><a href="index.html#reviews">Reviews</a></li>
         <li><a href="blog.html" aria-current="page">Blog</a></li>
@@ -96,6 +114,7 @@
         <nav class="nav-mobile-drawer__links" aria-label="Primary">
           <a href="index.html#home" class="nav-mobile-drawer__link">Home</a>
           <a href="index.html#services" class="nav-mobile-drawer__link">Services</a>
+          <a href="pricing.html" class="nav-mobile-drawer__link">Pricing</a>
           <a href="services-trust.html" class="nav-mobile-drawer__link">Why trust us</a>
           <a href="index.html#reviews" class="nav-mobile-drawer__link">Reviews</a>
           <a href="blog.html" class="nav-mobile-drawer__link" aria-current="page">Blog</a>
@@ -128,6 +147,12 @@
   <main class="blog-main" id="main">
     <div class="container blog-main__inner">
       <header class="blog-page-header">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Blog</li>
+          </ol>
+        </nav>
         <h1 class="blog-page-header__title">Blog</h1>
         <p class="blog-page-header__lede">
           Studio notes, care tips, and updates from Tabernacle Beauty.
@@ -145,9 +170,12 @@
         <h2 class="sr-only" id="blog-posts-heading">Recent posts</h2>
         <div class="blog-posts">
 
-          <article class="blog-post blog-post--featured">
+          <article class="blog-post blog-post--featured" id="prep-skin-before-facial">
             <div class="blog-post__image-wrapper">
-              <img src="Assets/skin_prep.jpg" alt="Woman washing face gently" class="blog-post__image" loading="lazy" />
+              <picture>
+              <source srcset="Assets/skin_prep.webp" type="image/webp" />
+              <img src="Assets/skin_prep.jpg" alt="Woman washing face gently" class="blog-post__image" width="1024" height="1024" decoding="async" fetchpriority="high" />
+            </picture>
             </div>
             <div class="blog-post__content">
               <span class="blog-post__badge">Featured</span>
@@ -155,84 +183,99 @@
               <p class="blog-post__meta">15 March 2026 · Beauty Tips</p>
               <div class="blog-post__body">
                 <p>Arrive with clean skin and skip heavy makeup on the day of your appointment. A gentle cleanse the night before is enough — we will take care of the rest in-studio.</p>
-                <p>If you use retinol or exfoliating acids, let us know when you book so we can tailor your treatment. Hydrate well and avoid direct sun for 24 hours after your facial for the best glow.</p>
+                <p>If you use retinol or exfoliating acids, let us know when you book so we can tailor your treatment. Hydrate well and avoid direct sun for 24 hours after your facial for the best glow. See the <a href="pricing.html#facials">facial price list</a> or <a href="services-trust.html#trust-facials">how we treat skin</a>.</p>
               </div>
-              <a href="#" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
+              <a href="#prep-skin-before-facial" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
-          <article class="blog-post">
+          <article class="blog-post" id="threading-vs-waxing">
             <div class="blog-post__image-wrapper">
-              <img src="Assets/brow_shaping.jpg" alt="Close up of perfect brows" class="blog-post__image" loading="lazy" />
+              <picture>
+              <source srcset="Assets/brow_shaping.webp" type="image/webp" />
+              <img src="Assets/brow_shaping.jpg" alt="Close up of perfect brows" class="blog-post__image" width="1024" height="1024" decoding="async" loading="lazy" />
+            </picture>
             </div>
             <div class="blog-post__content">
               <h2 class="blog-post__title">Brow shaping: threading vs waxing</h2>
               <p class="blog-post__meta">3 March 2026 · Treatments</p>
               <div class="blog-post__body">
                 <p>Threading gives precise, clean lines and is ideal for sensitive skin around the eyes. Waxing is quick and works well when you want a fuller reshape with longer-lasting results.</p>
-                <p>Not sure which suits you? Message us on WhatsApp with a photo of your brows and we will recommend the right option before your visit.</p>
+                <p>Not sure which suits you? Message us on WhatsApp with a photo of your brows and we will recommend the right option before your visit. Compare <a href="pricing.html#threading">threading prices</a> and <a href="pricing.html#waxing">waxing prices</a>.</p>
               </div>
-              <a href="#" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
+              <a href="#threading-vs-waxing" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
-          <article class="blog-post">
+          <article class="blog-post" id="tampines-trends-2026">
             <div class="blog-post__image-wrapper">
-              <img src="Assets/beauty_tampines.jpg" alt="Cozy modern salon interior" class="blog-post__image" loading="lazy" />
+              <picture>
+              <source srcset="Assets/beauty_tampines.webp" type="image/webp" />
+              <img src="Assets/beauty_tampines.jpg" alt="Cozy modern salon interior" class="blog-post__image" width="1024" height="1024" decoding="async" loading="lazy" />
+            </picture>
             </div>
             <div class="blog-post__content">
               <h2 class="blog-post__title">Top 3 beauty trends in Tampines North for 2026</h2>
               <p class="blog-post__meta">1 March 2026 · Studio News</p>
               <div class="blog-post__body">
                 <p>We are seeing a huge shift towards natural-looking enhancements in the Tampines North area. From subtle lash lifts to skin-first facial treatments, the focus is on looking like yourself, but rested.</p>
-                <p>Read about the top requested treatments at our studio and how you can achieve that effortless everyday glow without a heavy makeup routine.</p>
+                <p>The treatments clients ask for most are on our <a href="index.html#services">services menu</a>, including <a href="index.html#service-lashes">lash extensions</a> and <a href="index.html#service-facials">facials</a>.</p>
               </div>
-              <a href="#" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
+              <a href="#tampines-trends-2026" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
-          <article class="blog-post">
+          <article class="blog-post" id="lash-extension-aftercare">
             <div class="blog-post__image-wrapper">
-              <img src="Assets/lash_extensions.jpg" alt="Natural eyelash extensions" class="blog-post__image" loading="lazy" />
+              <picture>
+              <source srcset="Assets/lash_extensions.webp" type="image/webp" />
+              <img src="Assets/lash_extensions.jpg" alt="Natural eyelash extensions" class="blog-post__image" width="1024" height="1024" decoding="async" loading="lazy" />
+            </picture>
             </div>
             <div class="blog-post__content">
               <h2 class="blog-post__title">The ultimate guide to aftercare for eyelash extensions</h2>
               <p class="blog-post__meta">24 February 2026 · Treatments</p>
               <div class="blog-post__body">
                 <p>To keep your lashes looking full and fluttery, avoid water and steam for the first 24 hours. Gently brush them daily with a clean spoolie to prevent tangling.</p>
-                <p>Steer clear of oil-based makeup removers, as they can break down the lash adhesive. Stick to oil-free cleansers and treat your extensions with care to maximize their lifespan.</p>
+                <p>Steer clear of oil-based makeup removers, as they can break down the lash adhesive. Stick to oil-free cleansers and treat your extensions with care to maximize their lifespan. Book <a href="index.html#service-lashes">eyelash extensions</a> or read <a href="services-trust.html#trust-lashes">how we apply them</a>.</p>
               </div>
-              <a href="#" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
+              <a href="#lash-extension-aftercare" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
-          <article class="blog-post">
+          <article class="blog-post" id="waxing-vs-shaving">
             <div class="blog-post__image-wrapper">
-              <img src="Assets/body_waxing.jpg" alt="Smooth prepped leg" class="blog-post__image" loading="lazy" />
+              <picture>
+              <source srcset="Assets/body_waxing.webp" type="image/webp" />
+              <img src="Assets/body_waxing.jpg" alt="Smooth prepped leg" class="blog-post__image" width="1024" height="1024" decoding="async" loading="lazy" />
+            </picture>
             </div>
             <div class="blog-post__content">
               <h2 class="blog-post__title">Why regular body waxing is better than shaving</h2>
               <p class="blog-post__meta">18 February 2026 · Beauty Tips</p>
               <div class="blog-post__body">
                 <p>Waxing removes hair from the root, meaning it takes much longer to grow back compared to shaving. Over time, regular waxing can also make your hair grow back finer and softer.</p>
-                <p>Plus, it acts as a gentle exfoliation, removing dead skin cells and leaving your skin feeling incredibly smooth and refreshed for weeks.</p>
+                <p>Plus, it acts as a gentle exfoliation, removing dead skin cells and leaving your skin feeling incredibly smooth and refreshed for weeks. Browse <a href="pricing.html#waxing">waxing prices</a> or <a href="index.html#service-waxing">body waxing</a>.</p>
               </div>
-              <a href="#" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
+              <a href="#waxing-vs-shaving" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
-          <article class="blog-post">
+          <article class="blog-post" id="spa-day-at-home">
             <div class="blog-post__image-wrapper">
-              <img src="Assets/spa_day.jpg" alt="Relaxing spa setup" class="blog-post__image" loading="lazy" />
+              <picture>
+              <source srcset="Assets/spa_day.webp" type="image/webp" />
+              <img src="Assets/spa_day.jpg" alt="Relaxing spa setup" class="blog-post__image" width="1024" height="1024" decoding="async" loading="lazy" />
+            </picture>
             </div>
             <div class="blog-post__content">
               <h2 class="blog-post__title">Self-care Sunday: recreating a spa day at home</h2>
               <p class="blog-post__meta">12 February 2026 · Studio News</p>
               <div class="blog-post__body">
                 <p>Can't make it to the studio this week? You can still treat yourself to a luxurious spa day at home. Start by setting the mood with dim lighting, soft music, and a calming candle.</p>
-                <p>Incorporate a hydrating face mask, a warm bath with epsom salts, and finish with a rich body butter. Taking time for yourself is essential for both your skin and your mind.</p>
+                <p>Incorporate a hydrating face mask, a warm bath with epsom salts, and finish with a rich body butter. Taking time for yourself is essential for both your skin and your mind. When you want the studio version, <a href="pricing.html#facials">book a facial</a> or <a href="contact.html">contact us</a>.</p>
               </div>
-              <a href="#" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
+              <a href="#spa-day-at-home" class="blog-post__read-more">Read article <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -267,7 +310,10 @@
           <ul class="footer__links">
             <li><a href="index.html#home">Home</a></li>
             <li><a href="index.html#services">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
             <li><a href="services-trust.html">Why trust us</a></li>
+            <li><a href="blog.html" aria-current="page">Blog</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
             <li><a href="index.html#reviews">Reviews</a></li>
             <li><a href="index.html#visit">Visit &amp; map</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -280,7 +326,9 @@
             <li><a href="index.html#service-brows">Brow styling</a></li>
             <li><a href="index.html#service-facials">Facial treatments</a></li>
             <li><a href="index.html#service-waxing">Body waxing</a></li>
+            <li><a href="index.html#service-threading">Full face threading</a></li>
             <li><a href="index.html#service-lashes">Eyelash extensions</a></li>
+            <li><a href="pricing.html">Full price list</a></li>
             <li><a href="index.html#services">All services</a></li>
           </ul>
         </nav>
@@ -299,13 +347,12 @@
 
       <div class="footer__bottom">
         <p class="footer__copyright">© 2026 Tabernacle Beauty. All rights reserved.</p>
-        <p class="footer__fine">Expert care you can trust. | Made by <a href="https://webwizardsg.com" target="_blank" rel="noopener noreferrer">Web Wizards SG</a></p>
+        <p class="footer__fine">Expert care you can trust. | <a href="llms.txt">AI site summary</a> | Made by <a href="https://webwizardsg.com" target="_blank" rel="noopener noreferrer">Web Wizards SG</a></p>
       </div>
     </div>
   </footer>
 
   <!-- Elfsight AI Chatbot | Tabernacle Beauty -->
-  <script src="https://elfsightcdn.com/platform.js" async></script>
   <div class="elfsight-ai-chat" aria-label="AI chat assistant">
     <div class="elfsight-app-9d5edfd9-27d3-4846-9f54-422f2a305441" data-elfsight-app-lazy></div>
   </div>
@@ -379,6 +426,316 @@
         }
       });
     })();
+  </script>
+  <script>
+    window.addEventListener("load", function () {
+      var elf = document.createElement("script");
+      elf.src = "https://elfsightcdn.com/platform.js";
+      elf.async = true;
+      document.body.appendChild(elf);
+    });
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.tabernaclebeauty.com/#website",
+      "url": "https://www.tabernaclebeauty.com/",
+      "name": "Tabernacle Beauty",
+      "description": "Brows, lashes, facials, creambath hair, threading, eyebrow embroidery, henna brows, hair colouring, makeup, and body waxing in Tampines, Singapore. Book on WhatsApp.",
+      "inLanguage": "en-SG",
+      "publisher": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      }
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://www.tabernaclebeauty.com/blog.html#webpage",
+      "url": "https://www.tabernaclebeauty.com/blog.html",
+      "name": "Blog — Tabernacle Beauty | Singapore",
+      "description": "Beauty tips, studio news, and care guides from Tabernacle Beauty in Tampines, Singapore.",
+      "isPartOf": {
+        "@id": "https://www.tabernaclebeauty.com/#website"
+      },
+      "about": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "inLanguage": "en-SG",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.tabernaclebeauty.com/Assets/og-cover.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "dateModified": "2026-09-28",
+      "blogPost": [
+        {
+          "@id": "https://www.tabernaclebeauty.com/blog.html#prep-skin-before-facial"
+        },
+        {
+          "@id": "https://www.tabernaclebeauty.com/blog.html#threading-vs-waxing"
+        },
+        {
+          "@id": "https://www.tabernaclebeauty.com/blog.html#tampines-trends-2026"
+        },
+        {
+          "@id": "https://www.tabernaclebeauty.com/blog.html#lash-extension-aftercare"
+        },
+        {
+          "@id": "https://www.tabernaclebeauty.com/blog.html#waxing-vs-shaving"
+        },
+        {
+          "@id": "https://www.tabernaclebeauty.com/blog.html#spa-day-at-home"
+        }
+      ]
+    },
+    {
+      "@type": "BeautySalon",
+      "@id": "https://www.tabernaclebeauty.com/#business",
+      "name": "Tabernacle Beauty",
+      "alternateName": "Tabernacle Beauty Service",
+      "url": "https://www.tabernaclebeauty.com/",
+      "image": "https://www.tabernaclebeauty.com/Assets/og-cover.jpg",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.tabernaclebeauty.com/Assets/icons/icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "description": "Expert brow styling, facials, body waxing, hair colouring, lash extensions, makeup, creambath, threading, eyebrow embroidery, and henna brows in a calm Tampines, Singapore studio. Appointments recommended; eyebrow threading welcomes walk-ins.",
+      "telephone": "+6584574640",
+      "currenciesAccepted": "SGD",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tampines",
+        "addressRegion": "Singapore",
+        "addressCountry": "SG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 1.368182,
+        "longitude": 103.936726
+      },
+      "hasMap": "https://www.google.com/maps/place/Tabernacle+Beauty+Service/",
+      "sameAs": [
+        "https://www.google.com/maps/place/Tabernacle+Beauty+Service/"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Tampines"
+        },
+        {
+          "@type": "Country",
+          "name": "Singapore"
+        }
+      ],
+      "knowsLanguage": "en",
+      "employee": {
+        "@type": "Person",
+        "name": "Jessyca",
+        "jobTitle": "Owner and brow specialist"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+6584574640",
+        "contactType": "reservations",
+        "availableLanguage": [
+          "English"
+        ],
+        "areaServed": "SG",
+        "url": "https://wa.me/6584574640"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Book on WhatsApp",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://wa.me/6584574640",
+          "actionPlatform": [
+            "https://schema.org/DesktopWebPlatform",
+            "https://schema.org/MobileWebPlatform"
+          ]
+        }
+      },
+      "hasOfferCatalog": {
+        "@id": "https://www.tabernaclebeauty.com/pricing.html#offer-catalog"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "100"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.tabernaclebeauty.com/blog.html#prep-skin-before-facial",
+      "headline": "How to prep your skin before a facial",
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-03-15",
+      "articleSection": "Beauty Tips",
+      "inLanguage": "en-SG",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.tabernaclebeauty.com/Assets/skin_prep.webp",
+        "width": 1024,
+        "height": 1024
+      },
+      "author": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "publisher": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "mainEntityOfPage": "https://www.tabernaclebeauty.com/blog.html#prep-skin-before-facial",
+      "description": "Arrive with clean skin and skip heavy makeup on the day of your appointment. A gentle cleanse the night before is enough — we will take care of the rest in-studio. If you use retinol or exfoliating acids, let us know when you book so we can tailor your treatment.",
+      "url": "https://www.tabernaclebeauty.com/blog.html#prep-skin-before-facial"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.tabernaclebeauty.com/blog.html#threading-vs-waxing",
+      "headline": "Brow shaping: threading vs waxing",
+      "datePublished": "2026-03-03",
+      "dateModified": "2026-03-03",
+      "articleSection": "Treatments",
+      "inLanguage": "en-SG",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.tabernaclebeauty.com/Assets/brow_shaping.webp",
+        "width": 1024,
+        "height": 1024
+      },
+      "author": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "publisher": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "mainEntityOfPage": "https://www.tabernaclebeauty.com/blog.html#threading-vs-waxing",
+      "description": "Threading gives precise, clean lines and is ideal for sensitive skin around the eyes. Waxing is quick and works well when you want a fuller reshape with longer-lasting results.",
+      "url": "https://www.tabernaclebeauty.com/blog.html#threading-vs-waxing"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.tabernaclebeauty.com/blog.html#tampines-trends-2026",
+      "headline": "Top 3 beauty trends in Tampines North for 2026",
+      "datePublished": "2026-03-01",
+      "dateModified": "2026-03-01",
+      "articleSection": "Studio News",
+      "inLanguage": "en-SG",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.tabernaclebeauty.com/Assets/beauty_tampines.webp",
+        "width": 1024,
+        "height": 1024
+      },
+      "author": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "publisher": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "mainEntityOfPage": "https://www.tabernaclebeauty.com/blog.html#tampines-trends-2026",
+      "description": "Natural-looking enhancements are leading in Tampines North, from subtle lash work to skin-first facial treatments that look like yourself, but rested.",
+      "url": "https://www.tabernaclebeauty.com/blog.html#tampines-trends-2026"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.tabernaclebeauty.com/blog.html#lash-extension-aftercare",
+      "headline": "The ultimate guide to aftercare for eyelash extensions",
+      "datePublished": "2026-02-24",
+      "dateModified": "2026-02-24",
+      "articleSection": "Treatments",
+      "inLanguage": "en-SG",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.tabernaclebeauty.com/Assets/lash_extensions.webp",
+        "width": 1024,
+        "height": 1024
+      },
+      "author": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "publisher": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "mainEntityOfPage": "https://www.tabernaclebeauty.com/blog.html#lash-extension-aftercare",
+      "description": "Avoid water and steam for the first 24 hours. Gently brush lashes daily with a clean spoolie, and stay away from oil-based makeup removers.",
+      "url": "https://www.tabernaclebeauty.com/blog.html#lash-extension-aftercare"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.tabernaclebeauty.com/blog.html#waxing-vs-shaving",
+      "headline": "Why regular body waxing is better than shaving",
+      "datePublished": "2026-02-18",
+      "dateModified": "2026-02-18",
+      "articleSection": "Beauty Tips",
+      "inLanguage": "en-SG",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.tabernaclebeauty.com/Assets/body_waxing.webp",
+        "width": 1024,
+        "height": 1024
+      },
+      "author": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "publisher": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "mainEntityOfPage": "https://www.tabernaclebeauty.com/blog.html#waxing-vs-shaving",
+      "description": "Waxing removes hair from the root, so it takes longer to grow back than shaving and can return finer and softer. It also exfoliates dead skin.",
+      "url": "https://www.tabernaclebeauty.com/blog.html#waxing-vs-shaving"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.tabernaclebeauty.com/blog.html#spa-day-at-home",
+      "headline": "Self-care Sunday: recreating a spa day at home",
+      "datePublished": "2026-02-12",
+      "dateModified": "2026-02-12",
+      "articleSection": "Studio News",
+      "inLanguage": "en-SG",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.tabernaclebeauty.com/Assets/spa_day.webp",
+        "width": 1024,
+        "height": 1024
+      },
+      "author": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "publisher": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "mainEntityOfPage": "https://www.tabernaclebeauty.com/blog.html#spa-day-at-home",
+      "description": "Between studio visits, set a calm mood at home with a hydrating mask, a warm bath, and a rich body butter.",
+      "url": "https://www.tabernaclebeauty.com/blog.html#spa-day-at-home"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.tabernaclebeauty.com/blog.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.tabernaclebeauty.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.tabernaclebeauty.com/blog.html"
+        }
+      ]
+    }
+  ]
+}
   </script>
 </body>
 </html>
