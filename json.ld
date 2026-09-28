@@ -2266,6 +2266,15 @@
       "dateModified": "2026-09-28",
       "blogPost": [
         {
+          "@id": "https://www.tabernaclebeauty.com/eyebrow-threading-guide.html#article"
+        },
+        {
+          "@id": "https://www.tabernaclebeauty.com/how-to-choose-a-facial.html#article"
+        },
+        {
+          "@id": "https://www.tabernaclebeauty.com/eyebrow-embroidery-aftercare.html#article"
+        },
+        {
           "@id": "https://www.tabernaclebeauty.com/blog.html#prep-skin-before-facial"
         },
         {
@@ -2284,6 +2293,78 @@
           "@id": "https://www.tabernaclebeauty.com/blog.html#spa-day-at-home"
         }
       ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.tabernaclebeauty.com/eyebrow-threading-guide.html#article",
+      "headline": "Eyebrow threading in Tampines: a first-visit guide",
+      "description": "What eyebrow threading feels like, how long it takes, the Tampines price list from $9, and how to look after your brows. A guide from Tabernacle Beauty.",
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-09-28",
+      "articleSection": "Treatments",
+      "inLanguage": "en-SG",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.tabernaclebeauty.com/Assets/brow_shaping.webp",
+        "width": 1024,
+        "height": 1024
+      },
+      "author": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "publisher": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "mainEntityOfPage": "https://www.tabernaclebeauty.com/eyebrow-threading-guide.html",
+      "url": "https://www.tabernaclebeauty.com/eyebrow-threading-guide.html"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.tabernaclebeauty.com/how-to-choose-a-facial.html#article",
+      "headline": "How to choose a facial in Tampines",
+      "description": "Match your skin concern to a real Tabernacle Beauty facial, from classic at $60 to LED at $170, plus how to prepare and what to tell us when you book.",
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-09-28",
+      "articleSection": "Beauty Tips",
+      "inLanguage": "en-SG",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.tabernaclebeauty.com/Assets/skin_prep.webp",
+        "width": 1024,
+        "height": 1024
+      },
+      "author": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "publisher": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "mainEntityOfPage": "https://www.tabernaclebeauty.com/how-to-choose-a-facial.html",
+      "url": "https://www.tabernaclebeauty.com/how-to-choose-a-facial.html"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.tabernaclebeauty.com/eyebrow-embroidery-aftercare.html#article",
+      "headline": "Eyebrow embroidery: healing, aftercare, and how long it lasts",
+      "description": "How long eyebrow embroidery lasts, what healing usually looks like, and how it differs from threading and henna at Tabernacle Beauty in Tampines. Price is quoted, not listed.",
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-09-28",
+      "articleSection": "Treatments",
+      "inLanguage": "en-SG",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.tabernaclebeauty.com/Assets/brow_shaping.webp",
+        "width": 1024,
+        "height": 1024
+      },
+      "author": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "publisher": {
+        "@id": "https://www.tabernaclebeauty.com/#business"
+      },
+      "mainEntityOfPage": "https://www.tabernaclebeauty.com/eyebrow-embroidery-aftercare.html",
+      "url": "https://www.tabernaclebeauty.com/eyebrow-embroidery-aftercare.html"
     },
     {
       "@type": "BlogPosting",
