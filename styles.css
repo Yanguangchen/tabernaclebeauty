@@ -546,6 +546,9 @@ body.nav-drawer-open {
 .btn-primary,
 .btn-secondary {
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   padding: 15px 24px;
   border-radius: 999px;
@@ -567,7 +570,7 @@ body.nav-drawer-open {
 }
 
 .btn-primary::before {
-  content: "";
+  content: none;
   position: absolute;
   top: 0;
   left: -120%;
@@ -575,11 +578,12 @@ body.nav-drawer-open {
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.55), transparent);
   transform: skewX(-20deg);
-  transition: left 0.7s ease;
+  pointer-events: none;
 }
 
 .btn-primary:hover::before {
-  left: 140%;
+  content: "";
+  animation: btnSheen 0.7s ease forwards;
 }
 
 .btn-primary:hover {
@@ -1727,8 +1731,14 @@ body.nav-drawer-open {
   .pricing-intro h1,
   .pricing-intro p,
   .pricing-toc,
-  .contact-grid {
+  .contact-grid,
+  .btn-primary::before {
     animation: none !important;
+  }
+
+  .btn-primary::before,
+  .btn-primary:hover::before {
+    content: none;
   }
 
   .navbar,
@@ -1813,6 +1823,11 @@ body.nav-drawer-open {
 @keyframes shimmer {
   0% { left: -40%; }
   100% { left: 130%; }
+}
+
+@keyframes btnSheen {
+  from { left: -120%; }
+  to { left: 140%; }
 }
 
 @keyframes scrollDot {
