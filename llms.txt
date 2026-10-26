@@ -166,8 +166,9 @@ Published Google review excerpts on the homepage (all shown as 5 stars):
 
 ## Journal
 
-Four in-depth guides each have their own URL and are listed in the sitemap. Shorter notes stay on the blog page.
+Five in-depth guides each have their own URL and are listed in the sitemap. Shorter notes stay on the blog page.
 
+- [Body waxing in Tampines: a first visit](https://www.tabernaclebeauty.com/body-waxing-first-visit.html): 26 October 2026. Published waxing prices, including where the men’s price differs.
 - [What a creambath visit is for in Tampines](https://www.tabernaclebeauty.com/creambath-hair-treatment-tampines.html): 25 October 2026. Deep-conditioning care with scalp massage. Price is quoted, not published.
 - [Eyebrow threading in Tampines: a first-visit guide](https://www.tabernaclebeauty.com/eyebrow-threading-guide.html): 28 September 2026. Feel, timing, walk-ins, the threading price list from $9, hygiene, and aftercare.
 - [How to choose a facial in Tampines](https://www.tabernaclebeauty.com/how-to-choose-a-facial.html): 28 September 2026. Matches skin concerns to the facial menu from classic at $60 to LED at $170.
